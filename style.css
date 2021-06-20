@@ -153,6 +153,10 @@ article {
     background: #ffffff;
 }
 
+.clicked {
+    background: #9706ED;
+  }
+
 #title {
     position: absolute;
     width: 312px;
@@ -280,7 +284,7 @@ article {
 
 .text {
 
-    position: absolute;
+position: absolute;
 width: 312px;
 height: 96px;
 left: 24px;
