@@ -11,7 +11,7 @@ product_data = {
       },
       {
     
-        "img": "img/garden/Dior Homme Cologne 2013.jpg",
+        "img": "img/garden/Dior_Homme_Cologne_2013.jpg",
         "name": "Dior Homme Cologne 2013",
         "house": "Christian Dior",
         "type": "CITRUS AROMATIC",
@@ -21,7 +21,7 @@ product_data = {
       },
       {
     
-        "img": "img/garden/Baie 19.jpg",
+        "img": "img/garden/Baie_19.jpg",
         "name": "Baie 19",
         "house": "Le Labo",
         "type": "AROMATIC GREEN",
@@ -31,7 +31,7 @@ product_data = {
       },
       {
     
-        "img": "img/garden/Princess Cottongrass.jpg",
+        "img": "img/garden/Princess_Cottongrass.jpg",
         "name": "Princess Cottongrass",
         "house": "Rush",
         "type": "AROMATIC GREEN",
@@ -41,7 +41,7 @@ product_data = {
       },
       {
     
-        "img": "img/garden/FEU D_ORANGE.jpg",
+        "img": "img/garden/FEU_D_ORANGE.jpg",
         "name": "FEU D'ORANGE",
         "house": "L'Occitane",
         "type": "CITRUS AROMATIC",

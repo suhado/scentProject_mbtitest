@@ -101,15 +101,12 @@
             12: {"title": "파티가 끝난 후 친구와 작별인사를 하고 있다. 친구가 나에게 뭐라고 했을까?", "type": "JP", "A":"“역시 너랑은 말이 정말 잘 통하는 것 같아.”", "B":"“오늘 와줘서 너무 고마워. 연락할게~!”"}
         }
      
-//          var result = fetch("result.json")
-//   .then(response => response.json())
-//   .then(json => console.log(json["ISTJ"]["party"]));
 const explain_yTag = document.getElementById("explain_y");
 const result = JSON.parse(JSON.stringify(data));
 
 const recommend_tag = document.getElementById("recommend_item");
 const recommend_result = JSON.parse(JSON.stringify(product_data));
-// console.log(product_data["ISTJ"]);
+
 
 
         // 시작버튼
@@ -168,26 +165,50 @@ const recommend_result = JSON.parse(JSON.stringify(product_data));
                 });
                 explain_yTag.innerHTML = replace_explain_y;
                 
-
+                // recommend_info는 product.json에서 key가 mbti인 value를 가지고 오는 것이다.
+                // const recommend_result = JSON.parse(JSON.stringify(product_data));
                 var recommend_info = recommend_result[mbti];
+                // replace_recommend_img는 recommend_info가 array이기 때문에 각 요소의 img를 넣기 위한 빈 배열이다.
                 var replace_recommend_img = [];
-                recommend_info.forEach(item => replace_recommend_img.push(item["img"]));
+                var replace_recommend_name = [];
+                var replace_recommend_house = [];
+                var replace_recommend_test = [];
+                // recommend_info의 각 요소를 forEach문으로 원하는 요소의 값을 (item["img"]) 빈 배열인 replace_recommend_img에 넣어주는 것이다.
+                recommend_info.forEach(
+                    function(item) {
+                        var push_img = replace_recommend_img.push(item["img"]);
+                        var push_name = replace_recommend_name.push(item["name"]);
+                        var push_house = replace_recommend_house.push(item["house"]);
+                        var push_test = replace_recommend_test.push(item["img"], item["name"], item["house"]);
+                        return [
+                            push_img,
+                            push_name,
+                            push_house,
+                            push_test
+                        ]; 
+                    }
+                    );
+
+                
                 var replace_recommend_info = "";
-                
-                $("#recommend_item").html(replace_recommend_img);
-                console.log(typeof(replace_recommend_img[0]));
-                function createImg(){
-                    
+                var img_iterator = replace_recommend_img.entries();
+                var name_iterator = replace_recommend_name.entries();
+                var house_iterator = replace_recommend_house.entries();
+                var test_iterator = replace_recommend_test.entries();
+
+                for (const [index, [key, value]] of Object.entries(Object.entries(replace_recommend_test))) {
+                console.log(`${index}: ${key} = ${value}`);
+                //TODO index가 3n-3 = img, 3n-2 = name, 3n-1 = house. n=index/3. img, name, house 묶을 수 있게 코드 짜기
+                //TODO replace_recommend_info += `<li> <img class="contain" src=${value} alt="대체이미지"> <div class="product"> <span class="name"></span> <span class="house"></span> </div> </li>`
                 }
-                recommend_tag.innerHTML.forEach((item)=>{ 
-                    
-                    replace_recommend_info += `<li> <img src=${item} alt ="대체이미지"> </li>`;
-                });
+
                 
-                // $("#recommend_item").html(replace_recommend_img);
+                for(const [key,value] of img_iterator) {
+                    console.log(`${key}:${value}`);
+                    replace_recommend_info += `<li> <img class="contain" src=${value} alt="대체이미지"> </li>`;
+                };
                 recommend_tag.innerHTML = replace_recommend_info;
-                console.log(replace_recommend_info);
-                
+
             } else {
                 $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
                 $("#title").html(q[num]["title"]);
