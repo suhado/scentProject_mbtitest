@@ -1,7 +1,27 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    display: table-cell;
     position: relative;
-    width: 360px;
-    height: 640px;
+    text-align: center;
+    vertical-align: middle;
 
     background: #FFFFFF;
 }
@@ -9,6 +29,18 @@ body {
 article {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.start {
+    margin: 60px 15px;
+
+}
+
+img {
+position: relative;
+width: 312px;
+height: 208px;
 }
 
 .question {
@@ -16,30 +48,27 @@ article {
 }
 
 .result {
-    display: none;
+    display: none; 
+    text-align: center;
+    vertical-align: middle;
 }
 
-#img {
-    position: absolute;
-    width: 312px;
-    height: 196px;
-    left: 24px;
-    top: 104px;
+ #img {
+    position: relative;
+
+    margin-bottom: 15px;
 
     background: #C4C4C4;
 }
 
-.share {
+/* .share {
     margin: 0 auto;
-}
+} */
 
 #logo {
     /* boonboon */
-    position: absolute;
-    width: 149px;
-    height: 24px;
-    left: 105px;
-    top: 12px;
+
+    margin-top: 15px;
     
     font-family: Righteous;
     font-style: normal;
@@ -54,15 +83,15 @@ article {
 
 #maintitle {
 /* 나와 어울리는 파티는? */
-    position: absolute;
-    width: 355px;
+    position: relative;
+    /* width: 355px;
     height: 25px;
     left: 3px;
-    top: 311px;
+    top: 311px; */
 
     /* 제목1 */
-
-    font-family: Gmarket Sans TTF;
+    margin-top: 20px;
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -74,15 +103,12 @@ article {
 }
 
 #subtitle {
-    position: absolute;
-    width: 216px;
-    height: 18px;
-    left: 72px;
-    top: 347px;
+    position: relative;
+    margin-top: 5px;
 
     /* 설명1 */
 
-    font-family: Gmarket Sans TTF;
+    font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -98,23 +124,24 @@ article {
 
 #startbtn {
 /* 5 */
-    color: #FFFFFF;
+    color: #a38c8c;
 
-    position: absolute;
+    position: relative;
+    margin: auto;
+
     width: 216px;
     height: 56px;
-    left: 72px;
-    top: 419px;
-    /* 1 */
+    
 
     background: #9706ED;
     border-radius: 28px;
+    border-color: #9706ED;
 
-    font-family: Gmarket Sans TTF;
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    line-height: 25px;
+    line-height: 47px;
     align-items: center;
     text-align: center;
 
@@ -134,8 +161,21 @@ article {
     border: 1px solid #9706ED;
     box-sizing: border-box;
     border-radius: 30px;
-
     background: #FFFFFF;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+    /* or 18px */
+    
+    align-items: center;
+    text-align: center;
+    
+    /* 2 */
+    
+    color: #2D2D2D;
 }
 
 #B {
@@ -151,11 +191,25 @@ article {
     box-sizing: border-box;
     border-radius: 30px;
     background: #ffffff;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+    /* or 18px */
+    
+
+    align-items: center;
+    text-align: center;
+    
+    /* 2 */
+    
+    color: #2D2D2D;
 }
 
-.clicked {
-    background: #9706ED;
-  }
+
+
 
 #title {
     position: absolute;
@@ -166,7 +220,7 @@ article {
 
     /* 질문 */
 
-    font-family: Gmarket Sans TTF;
+    font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -180,128 +234,284 @@ article {
     color: #2D2D2D;
 }
 
-#party {
+.text {
+
     position: absolute;
     width: 312px;
-    height: 24px;
+    height: 96px;
     left: 24px;
-    top: 72px;
+    top: 128px;
     
-    /* 제목2 */
+    /* 질문 */
     
-    font-family: Gmarket Sans TTF;
+    font-family: 'GmarketSansMedium'F;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+    /* or 24px */
+    
+    text-align: center;
+    
+    /* 2 */
+    
+    color: #2D2D2D;
+    }
+
+#party {
+    position: relative;
+       
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 25px;
     text-align: center;
     
-    /* 2 */
+
     color: #2D2D2D;
 }
 
+#result_img {
+    position: relative;
+    margin: 15px;
+
+    width: 248px;
+    height: 248px;
+
+    border-radius: 70%;
+}
+
+#explain {
+    position: relative;
+    
+    margin:4px;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 132%;
+
+    text-align: center;
+    color: #6E6E6E;
+}
+
 #explain2 {
-    position: absolute;
-    width: 312px;
-    height: 28px;
-    left: 24px;
-    top: 336px;
+    position: relative;
 
-    /* 제목1 */
-
-    font-family: Gmarket Sans TTF;
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 30px;
     text-align: center;
 
-    /* 1 */
     color: #9706ED;
 }
 
-#explain {
-    position: absolute;
-    width: 312px;
-    height: 16px;
-    left: 24px;
-    top: 316px;
-
-    /* 설명1 */
-    font-family: Gmarket Sans TTF;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 132%;
-    
-    /* identical to box height, or 16px */
-    text-align: center;
-
-    /* 3 */
-    color: #6E6E6E;
+ul {
+display: flex;
+flex-wrap: wrap;
+list-style: square;
+text-align: justify;
+margin: 24px 10px;
+padding: 0;
 }
 
-#explain_y {
-    position: absolute;
-    width: 300px;
-    height: 248px;
-    left: 36px;
-    top: 388px;
+ul li::marker{
+color: #9706ED;
+margin-right: 10px;
+}
 
-    /* 응답 */
-    font-family: Gmarket Sans TTF;
+
+/* #dot {
+    position: relative;
+    width: 5px;
+    height: 5px;
+
+    background: #9706ED;
+} */
+
+#explain_y {
+    position: relative;
+
+    margin: 1px;
+
+    font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 131%;
-    /* or 18px */
 
-    /* 2 */
     color: #2D2D2D;
 }
 
-#bar {
-    position: absolute;
+hr {
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #9706ED;
+}
+
+#core {
+    position: relative;
+    margin: 20px;
+}
+
+/* .bar {
+    position: relative;
     width: 148px;
     height: 0px;
     left: 106px;
-    top: 670px;
-
-    /* 1 */
+    top: 670px; 
+    
     border: 2px solid #9706ED;
+} */
+
+
+
+.recommend {
+    position: relative;
+    margin: 20px;
+
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 132%;
+
+    text-align: center;
 }
 
-#dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    left: 24px;
-    top: 394px;
+.more {
+    position: relative;
+    display: flex;
+    margin: 15px -5px;
 
-    /* 1 */
-    background: #9706ED;
+
+    font-family:'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+    text-align: right;
+
+    color: #9706ED;
 }
 
-.text {
+#more_text {
+flex: 1;
+}
 
-position: absolute;
-width: 312px;
-height: 96px;
-left: 24px;
-top: 128px;
+#more_icon {
+margin-left: 5px;
+font-size: 10px;
+}
 
-/* 질문 */
 
-font-family: Gmarket Sans TTF;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 132%;
-/* or 24px */
 
+.survey {
+    position: relative;
+    margin: 20px;
+
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 132%;
+
+    text-align: center;
+}
+
+#survey_text {
+    position: relative;
+    margin: 10px;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 131%;
+
+    color: #2D2D2D;
+}
+
+#survey_btn {
+    color: #a38c8c;
+
+    position: relative;
+    margin: 24px auto;
+
+    width: 180px;
+    height: 48px;
+
+    background: #ffffff;
+    border-radius: 28px;
+    border-color: #9706ED;
+
+    font-family: 'GmarketSansmedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 47px;
+    align-items: center;
+    text-align: center;
+
+    /* 5 */
+    color: #2D2D2D;
+}
+
+.result_bottom {
+
+align-items: center;
 text-align: center;
 
-/* 2 */
+margin: 140px auto;
+}
 
-color: #2D2D2D;
+#copyLink {
+    position: relative;
+
+    
+    width: 312px;
+    height: 60px;
+    border: 1px solid #9706ED;
+    /* box-sizing: border-box; */
+    border-radius: 30px;
+    background: #9706ED;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+#retest {
+    position: relative;
+
+    margin-top: 25px;
+    width: 312px;
+    height: 60px;
+    border: 1px solid #9706ED;
+    /* box-sizing: border-box; */
+    border-radius: 30px;
+    background: #ffffff;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+
+    align-items: center;
+    text-align: center;
+
+    color: #2D2D2D;
 }

@@ -1,7 +1,7 @@
-{
+product_data = {
     "INFP" : [{
     
-        "img": "./img/garden/Lacoste_Blue.jpeg",
+        "img": "img/garden/Lacoste_Blue.jpeg",
         "name": "Eau de Lacoste L.12.12. Blue",
         "house": "Lacoste",
         "type": "CHYPRE",
@@ -11,7 +11,7 @@
       },
       {
     
-        "img": "./img/garden/Dior Homme Cologne 2013.jpg",
+        "img": "img/garden/Dior Homme Cologne 2013.jpg",
         "name": "Dior Homme Cologne 2013",
         "house": "Christian Dior",
         "type": "CITRUS AROMATIC",
@@ -21,7 +21,7 @@
       },
       {
     
-        "img": "./img/garden/Baie 19.jpg",
+        "img": "img/garden/Baie 19.jpg",
         "name": "Baie 19",
         "house": "Le Labo",
         "type": "AROMATIC GREEN",
@@ -31,7 +31,7 @@
       },
       {
     
-        "img": "./img/garden/Princess Cottongrass.jpg",
+        "img": "img/garden/Princess Cottongrass.jpg",
         "name": "Princess Cottongrass",
         "house": "Rush",
         "type": "AROMATIC GREEN",
@@ -41,7 +41,7 @@
       },
       {
     
-        "img": "./img/garden/FEU D_ORANGE.jpg",
+        "img": "img/garden/FEU D_ORANGE.jpg",
         "name": "FEU D'ORANGE",
         "house": "L'Occitane",
         "type": "CITRUS AROMATIC",
@@ -52,7 +52,7 @@
     ],
     "ENFP" : [{
     
-        "img": "./img/beach/AQUA ALLEGORIA PERA GRANITA .jpg",
+        "img": "img/beach/AQUA ALLEGORIA PERA GRANITA .jpg",
         "name": "AQUA ALLEGORIA PERA GRANITA",
         "house": "Guerlain",
         "type": "CITRUS FRUITY",
@@ -62,7 +62,7 @@
       },
       {
     
-        "img": "./img/beach/Winter palace.jpg",
+        "img": "img/beach/Winter palace.jpg",
         "name": "Winter palace",
         "house": "Memo",
         "type": "AROMATIC GREEN",
@@ -72,7 +72,7 @@
       },
       {
     
-        "img": "./img/beach/Flowerbomb Viktor_Rolf.jpg",
+        "img": "img/beach/Flowerbomb Viktor_Rolf.jpg",
         "name": "Flowerbomb",
         "house": "Viktor&Rolf",
         "type": "AMBER FLORAL",
@@ -82,7 +82,7 @@
       },
       {
     
-        "img": "./img/beach/BABY TOUCH EAU DE TOILETTE.jpg",
+        "img": "img/beach/BABY TOUCH EAU DE TOILETTE.jpg",
         "name": "BABY TOUCH EAU DE TOILETTE",
         "house": "Burberry",
         "type": "CITRUS FLORAL MUSK",
@@ -92,7 +92,7 @@
       },
       {
     
-        "img": "./img/beach/EAU DE RHUBARBE ÉCARLATE.jpg",
+        "img": "img/beach/EAU DE RHUBARBE ÉCARLATE.jpg",
         "name": "EAU DE RHUBARBE ÉCARLATE",
         "house": "Hermès",
         "type": "CITRUS FRUITY",
@@ -102,7 +102,7 @@
       },
       {
     
-        "img": "./img/beach/EAU DE MANDARINE AMBRÉE.jpg",
+        "img": "img/beach/EAU DE MANDARINE AMBRÉE.jpg",
         "name": "EAU DE MANDARINE AMBRÉE",
         "house": "Hermès",
         "type": "CITRUS FRUITY",
@@ -114,7 +114,7 @@
     ],
     "INFJ" : [{
     
-        "img": "./img/pajamas/Escape for Men.jpg",
+        "img": "img/pajamas/Escape for Men.jpg",
         "name": "Escape for Men",
         "house": "Calvin Klein",
         "type": "AROMATIC GREEN",
@@ -124,7 +124,7 @@
       },
       {
     
-        "img": "./img/pajamas/Philosykos Eau de Parfum.jpg",
+        "img": "img/pajamas/Philosykos Eau de Parfum.jpg",
         "name": "Philosykos Eau de Parfum",
         "house": "Diptyque",
         "type": "AROMATIC GREEN",
@@ -134,7 +134,7 @@
       },
       {
     
-        "img": "./img/pajamas/Sun rush.jpg",
+        "img": "img/pajamas/Sun rush.jpg",
         "name": "Sun",
         "house": "Rush",
         "type": "CITRUS GOURMAND",
@@ -144,7 +144,7 @@
       },
       {
     
-        "img": "./img/pajamas/Honey I washed The Kids.jpg",
+        "img": "img/pajamas/Honey I washed The Kids.jpg",
         "name": "Honey I washed The Kids",
         "house": "Rush",
         "type": "CITRUS GOURMAND",
@@ -154,7 +154,7 @@
       },
       {
     
-        "img": "./img/pajamas/jean-paul gaultier 2019.jpg",
+        "img": "img/pajamas/jean-paul gaultier 2019.jpg",
         "name": "LA BELLE",
         "house": "jean-paul gaultier",
         "type": "ORIENTAL GOURMAND",
@@ -164,7 +164,7 @@
       },
       {
     
-        "img": "./img/pajamas/Chanel No 19 Eau de Parfum.jpg",
+        "img": "img/pajamas/Chanel No 19 Eau de Parfum.jpg",
         "name": "Chanel No 19 Eau de Parfum",
         "house": "Chanel",
         "type": "FLORAL WOODY GREEN",
@@ -174,7 +174,7 @@
       },
       {
     
-        "img": "./img/pajamas/No 10 White Oud.jpg",
+        "img": "img/pajamas/No 10 White Oud.jpg",
         "name": "No 10 White Oud",
         "house": "Agonist",
         "type": "WOODY FLORAL MUSK",
@@ -185,7 +185,7 @@
     ],
     "ENFJ" : [{
     
-        "img": "./img/gatsby/DOLCE 1.jpg",
+        "img": "img/gatsby/DOLCE 1.jpg",
         "name": "DOLCE",
         "house": "Dolce & Gabbana",
         "type": "FLORAL WOODY MUSK",
@@ -195,7 +195,7 @@
       },
       {
     
-        "img": "./img/gatsby/GERANIUM ODORATA.jpg",
+        "img": "img/gatsby/GERANIUM ODORATA.jpg",
         "name": "GERANIUM ODORATA",
         "house": "diptyque",
         "type": "FLORAL WOODY MUSK",
@@ -205,7 +205,7 @@
       },
       {
     
-        "img": "./img/gatsby/Moschino Toy 1.jpg",
+        "img": "img/gatsby/Moschino Toy 1.jpg",
         "name": "Moschino Toy",
         "house": "Moschino",
         "type": "CITRUS FLORAL WOODY",
@@ -215,7 +215,7 @@
       },
       {
     
-        "img": "./img/gatsby/Autumn SPLASH Violet.jpg",
+        "img": "img/gatsby/Autumn SPLASH Violet.jpg",
         "name": "SPLASH - VIOLET",
         "house": "Marc Jacobs",
         "type": "FLORAL WOODY MUSK",
@@ -225,7 +225,7 @@
       },
       {
     
-        "img": "./img/gatsby/Wicked Love.jpg",
+        "img": "img/gatsby/Wicked Love.jpg",
         "name": "Wicked Love",
         "house": "Maison Martin Margiela",
         "type": "FLORAL WOODY MUSK",
@@ -235,7 +235,7 @@
       },
       {
     
-        "img": "./img/gatsby/ROSE OF NO MAN_S LAND.png",
+        "img": "img/gatsby/ROSE OF NO MAN_S LAND.png",
         "name": "ROSE OF NO MAN'S LAND",
         "house": "BYREDO PARFUMS",
         "type": "FLORAL WOODY",
@@ -245,7 +245,7 @@
       },
       {
     
-        "img": "./img/gatsby/BURBERRY SPORT FOR WOMEN 2010.jpg",
+        "img": "img/gatsby/BURBERRY SPORT FOR WOMEN 2010.jpg",
         "name": "BURBERRY SPORT FOR WOMEN",
         "house": "Burberry",
         "type": "FLORAL WOODY MUSK",
@@ -255,7 +255,7 @@
       },
       {
     
-        "img": "./img/gatsby/BRIT RHYTHM FOR HER.jpg",
+        "img": "img/gatsby/BRIT RHYTHM FOR HER.jpg",
         "name": "BRIT RHYTHM FOR HER",
         "house": "Burberry",
         "type": "FLORAL WOODY MUSK",
@@ -265,7 +265,7 @@
       },
       {
     
-        "img": "./img/gatsby/Rose Pompon Eau de Toilette.jpg",
+        "img": "img/gatsby/Rose Pompon Eau de Toilette.jpg",
         "name": "Rose Pompon Eau de Toilette",
         "house": "Annick Goutal",
         "type": "FLORAL FRUITY",
@@ -275,7 +275,7 @@
       },
       {
     
-        "img": "./img/gatsby/Hermessence Vetiver Tonka.jpg",
+        "img": "img/gatsby/Hermessence Vetiver Tonka.jpg",
         "name": "Hermessence Vetiver Tonka",
         "house": "Hermès",
         "type": "WOODY CHYPRE",
@@ -285,7 +285,7 @@
       },
       {
     
-        "img": "./img/gatsby/Terre d_Hermes Flacon H 2021 Eau de Toilette.jpg",
+        "img": "img/gatsby/Terre d_Hermes Flacon H 2021 Eau de Toilette.jpg",
         "name": "Terre d'Hermes Flacon H 2021 Eau de Toilette",
         "house": "Hermès",
         "type": "WOODY SPICY",
@@ -297,7 +297,7 @@
     "INTJ" : [
         {
         
-            "img": "./img/classic/alexander-mcqueen-vetiver-moss-eau-de-parfum.jpeg",
+            "img": "img/classic/alexander-mcqueen-vetiver-moss-eau-de-parfum.jpeg",
             "name": "Vetiver Moss",
             "house": "Alexander McQueen",
             "type": "WOODY CHYPRE",
@@ -307,7 +307,7 @@
           },
           {
         
-            "img": "./img/classic/mandragore.jpg",
+            "img": "img/classic/mandragore.jpg",
             "name": "Mandragore",
             "house": "Annick Goutal",
             "type": "WOODY AROMATIC",
@@ -317,7 +317,7 @@
           },
           {
         
-            "img": "./img/classic/gucci-the_last_day_of_summer.jpg",
+            "img": "img/classic/gucci-the_last_day_of_summer.jpg",
             "name": "The Last Day Of Summer Eau de Parfum",
             "house": "Gucci",
             "type": "WOODY SPICY",
@@ -327,7 +327,7 @@
           },
           {
         
-            "img": "./img/classic/Jicky.jpg",
+            "img": "img/classic/Jicky.jpg",
             "name": "Jicky",
             "house": "Guerlain",
             "type": "AMBER FOUGERE",
@@ -337,7 +337,7 @@
           },
           {
         
-            "img": "./img/classic/20_Carats.jpg",
+            "img": "img/classic/20_Carats.jpg",
             "name": "20 Carats",
             "house": "Dana",
             "type": "CHYPRE FRUITY",
@@ -348,7 +348,7 @@
     ],
     "ENTJ" : [{
     
-        "img": "./img/jamesbond/fidelis.jpg",
+        "img": "img/jamesbond/fidelis.jpg",
         "name": "Fidelis",
         "house": "Histoires de Parfums",
         "type": "CHYPRE FLORAL",
@@ -358,7 +358,7 @@
       },
       {
     
-        "img": "./img/jamesbond/histoires-de-parfums-this-is-not-a-blue-bottle-1-6-ceci-n-est-pas-un-flacon-bleu.jpg",
+        "img": "img/jamesbond/histoires-de-parfums-this-is-not-a-blue-bottle-1-6-ceci-n-est-pas-un-flacon-bleu.jpg",
         "name": "This Is Not A Blue Bottle",
         "house": "Histoires de Parfums",
         "type": "AMBER",
@@ -368,7 +368,7 @@
       },
       {
     
-        "img": "./img/jamesbond/another_13.jpg",
+        "img": "img/jamesbond/another_13.jpg",
         "name": "Another 13",
         "house": "Le Labo",
         "type": "AMBER WOODY",
@@ -378,7 +378,7 @@
       },
       {
     
-        "img": "./img/jamesbond/dior_christian_dior-dune_eau_de_toilette.jpg",
+        "img": "img/jamesbond/dior_christian_dior-dune_eau_de_toilette.jpg",
         "name": "Dune",
         "house": "Christian Dior",
         "type": "AMBER WOODY",
@@ -388,7 +388,7 @@
       },
       {
     
-        "img": "./img/jamesbond/universalis.jpg",
+        "img": "img/jamesbond/universalis.jpg",
         "name": "Aqua Universalis",
         "house": "Maison Francis Kurkdjian",
         "type": "AROMATIC",
@@ -398,7 +398,7 @@
       },
       {
     
-        "img": "./img/jamesbond/universalis_forte.jpg",
+        "img": "img/jamesbond/universalis_forte.jpg",
         "name": "Aqua Universalis Forte",
         "house": "Maison Francis Kurkdjian",
         "type": "FLORAL WOODY MUSK",
@@ -410,7 +410,7 @@
     "INTP" : [
         {
         
-            "img": "./img/casino/x-nick-jonas-silver.jpg",
+            "img": "img/casino/x-nick-jonas-silver.jpg",
             "name": "JV x NJ Silver",
             "house": "John Varvatos",
             "type": "CITRUS AROMATIC",
@@ -420,7 +420,7 @@
           },
           {
         
-            "img": "./img/casino/Frivole Fragonard.jpeg",
+            "img": "img/casino/Frivole Fragonard.jpeg",
             "name": "Frivole",
             "house": "Fragonard",
             "type": "FLORAL FRUITY",
@@ -430,7 +430,7 @@
           },
           {
         
-            "img": "./img/casino/rossa_carbon.jpg",
+            "img": "img/casino/rossa_carbon.jpg",
             "name": "Luna Rossa Carbon",
             "house": "Prada",
             "type": "FRESH SYNTHETIC",
@@ -440,7 +440,7 @@
           },
           {
         
-            "img": "./img/casino/thebug.jpg",
+            "img": "img/casino/thebug.jpg",
             "name": "The Bug",
             "house": "Rush",
             "type": "AROMATIC AQUATIC",
@@ -450,7 +450,7 @@
           },
           {
         
-            "img": "./img/casino/aquamarina.jpg",
+            "img": "img/casino/aquamarina.jpg",
             "name": "Aqua Marina",
             "house": "Monotheme Fine Fragrances Venezia",
             "type": "AROMATIC AQUATIC",
@@ -460,7 +460,7 @@
           },
           {
         
-            "img": "./img/casino/sailing-day.jpg",
+            "img": "img/casino/sailing-day.jpg",
             "name": "Sailing Day",
             "house": "Maison Martin Margiela",
             "type": "AROMATIC AQUATIC",
@@ -472,7 +472,7 @@
     "ENTP" : [
         {
         
-            "img": "./img/beer/ihvijv_starwalker_eau_de_toilette.jpg",
+            "img": "img/beer/ihvijv_starwalker_eau_de_toilette.jpg",
             "name": "Starwalker (Eau de Toilette)",
             "house": "Montblanc",
             "type": "FRESH WOODY",
@@ -482,7 +482,7 @@
           },
           {
         
-            "img": "./img/beer/hugo_boss-boss_orange_man_eau_de_toilette.jpg",
+            "img": "img/beer/hugo_boss-boss_orange_man_eau_de_toilette.jpg",
             "name": "Boss Orange Man (Eau de Toilette)",
             "house": "Hugo Boss",
             "type": "FRUITY WOODY",
@@ -492,7 +492,7 @@
           },
           {
         
-            "img": "./img/beer/allure_homme_sport.jpg",
+            "img": "img/beer/allure_homme_sport.jpg",
             "name": "Allure Homme Sport (Eau de Toilette)",
             "house": "Chanel",
             "type": "FRESH CITRUSY",
@@ -502,7 +502,7 @@
           },
           {
         
-            "img": "./img/beer/decadence.jpg",
+            "img": "img/beer/decadence.jpg",
             "name": "DECADENCE",
             "house": "Marc Jacobs",
             "type": "WOODY FRUITY",
@@ -512,7 +512,7 @@
           },
           {
         
-            "img": "./img/beer/MUSC IMPÉRIAL.jpeg",
+            "img": "img/beer/MUSC IMPÉRIAL.jpeg",
             "name": "MUSC IMPÉRIAL",
             "house": "Atelier Cologne",
             "type": "WOODY FRUITY",
@@ -523,7 +523,7 @@
     ],
     "ISFP" : [{
     
-        "img": "./img/mask/twillight.jpg",
+        "img": "img/mask/twillight.jpg",
         "name": "Twillight",
         "house": "Rush",
         "type": "AROMATIC FLORAL",
@@ -533,7 +533,7 @@
       },
       {
     
-        "img": "./img/mask/acqua_di_colonia__cala_rossa.jpg",
+        "img": "img/mask/acqua_di_colonia__cala_rossa.jpg",
         "name": "Cala Rossa Eau de Cologne",
         "house": "Santa Maria Novella",
         "type": "AROMATIC GREEN",
@@ -543,7 +543,7 @@
       },
       {
     
-        "img": "./img/mask/prada-infusion_de_fleur_d_oranger.jpg",
+        "img": "img/mask/prada-infusion_de_fleur_d_oranger.jpg",
         "name": "Infusion de Fleur d'Oranger",
         "house": "Prada",
         "type": "FLORAL FRESH",
@@ -553,7 +553,7 @@
       },
       {
     
-        "img": "./img/mask/marly-herod.jpg",
+        "img": "img/mask/marly-herod.jpg",
         "name": "Herod",
         "house": "Parfums de Marly",
         "type": "SWEET SPICY",
@@ -563,7 +563,7 @@
       },
       {
     
-        "img": "./img/mask/tell_no_one.jpg",
+        "img": "img/mask/tell_no_one.jpg",
         "name": "Tell No One",
         "house": "BOONTHESHOP",
         "type": "CITRUS",
@@ -576,7 +576,7 @@
     "ESFP":[
         {
         
-            "img": "./img/edm/polored.jpg",
+            "img": "img/edm/polored.jpg",
             "name": "Polo Red",
             "house": "Ralph Lauren",
             "type": "WOODY SPICY",
@@ -586,7 +586,7 @@
           },
           {
         
-            "img": "./img/edm/mon_paris_couture.jpg",
+            "img": "img/edm/mon_paris_couture.jpg",
             "name": "Mon Paris Couture",
             "house": "Yves Saint Laurent",
             "type": "CHYPRE FRUIT",
@@ -596,7 +596,7 @@
           },
           {
         
-            "img": "./img/edm/chopard-happy-chopard-felicia-roses.jpg",
+            "img": "img/edm/chopard-happy-chopard-felicia-roses.jpg",
             "name": "Happy Chopard Felicia Roses",
             "house": "Chopard",
             "type": "FLORAL FRUITY",
@@ -606,7 +606,7 @@
           },
           {
         
-            "img": "./img/edm/serge_lutens-chypre_rouge.jpg",
+            "img": "img/edm/serge_lutens-chypre_rouge.jpg",
             "name": "CHYPRE ROUGE",
             "house": "Serge Lutens",
             "type": "CHYPRE FRUITY",
@@ -616,7 +616,7 @@
           },
           {
         
-            "img": "./img/edm/legend_calligraphy_edition.jpg",
+            "img": "img/edm/legend_calligraphy_edition.jpg",
             "name": "LEGEND CALLIGRAPHY - EAU DE TOILETTE",
             "house": "Montblanc",
             "type": "FERN FLORAL",
@@ -628,7 +628,7 @@
     "ISTP" : [
         {
         
-            "img": "./img/glamping/Myrrh _ Tonka.jpg",
+            "img": "img/glamping/Myrrh _ Tonka.jpg",
             "name": "Myrrh & Tonka",
             "house": "Jo Malone London",
             "type": "AMBER",
@@ -638,7 +638,7 @@
           },
           {
         
-            "img": "./img/glamping/n5.jpg",
+            "img": "img/glamping/n5.jpg",
             "name": "Chanel No 5 Eau de Parfum",
             "house": "Chanel",
             "type": "FLORAL ALDEHYDE",
@@ -648,7 +648,7 @@
           },
           {
         
-            "img": "./img/glamping/Diorissimo Extrait de Parfum.jpg",
+            "img": "img/glamping/Diorissimo Extrait de Parfum.jpg",
             "name": "Diorissimo Extrait de Parfum",
             "house": "Christian Dior",
             "type": "FLORAL GREEN",
@@ -658,7 +658,7 @@
           },
           {
         
-            "img": "./img/glamping/john_varvatos-artisan_eau_de_toilette.jpg",
+            "img": "img/glamping/john_varvatos-artisan_eau_de_toilette.jpg",
             "name": "Artisan",
             "house": "John Varvatos",
             "type": "CITRUS AROMATIC",
@@ -669,7 +669,7 @@
     ],
     "ESTP" : [{
     
-        "img": "./img/pool/Tobacco Vanille-Tom Ford-.jpg",
+        "img": "img/pool/Tobacco Vanille-Tom Ford-.jpg",
         "name": "Tobacco Vanille",
         "house": "Tom Ford",
         "type": "AMBER SPICY",
@@ -679,7 +679,7 @@
       },
       {
     
-        "img": "./img/pool/Bleu de Chanel-Chanel.jpg",
+        "img": "img/pool/Bleu de Chanel-Chanel.jpg",
         "name": "Bleu de Chanel",
         "house": "Chanel",
         "type": "WOODY AROMATIC",
@@ -689,7 +689,7 @@
       },
       {
     
-        "img": "./img/pool/Le Male-Jean Paul Gaultier.jpg",
+        "img": "img/pool/Le Male-Jean Paul Gaultier.jpg",
         "name": "Le Male",
         "house": "Jean Paul Gaultier",
         "type": "AMBER FOUGERE",
@@ -699,7 +699,7 @@
       },
       {
     
-        "img": "./img/pool/Armani Prive Rouge Malachite-Giorgio Armani.jpg",
+        "img": "img/pool/Armani Prive Rouge Malachite-Giorgio Armani.jpg",
         "name": "Armani Prive Rouge Malachite",
         "house": "Giorgio Armani",
         "type": "AMBER FLORAL",
@@ -709,7 +709,7 @@
       },
       {
     
-        "img": "./img/pool/Aqua Allegoria Herba Fresca-Guerlain-.jpg",
+        "img": "img/pool/Aqua Allegoria Herba Fresca-Guerlain-.jpg",
         "name": "Aqua Allegoria Herba Fresca",
         "house": "Guerlain",
         "type": "AROMATIC GREEN",
@@ -722,7 +722,7 @@
     "ISFJ" : [
         {
         
-            "img": "./img/tea/orpheon-diptyque-.jpg",
+            "img": "img/tea/orpheon-diptyque-.jpg",
             "name": "Orphéon",
             "house": "Diptyque",
             "type": "WOODY CHYPRE",
@@ -732,7 +732,7 @@
           },
           {
         
-            "img": "./img/tea/Cotton Musk-Ramon Monegal-.jpg",
+            "img": "img/tea/Cotton Musk-Ramon Monegal-.jpg",
             "name": "Cotton Musk",
             "house": "Ramon Monegal",
             "type": "FLORAL WOODY MUSK",
@@ -742,7 +742,7 @@
           },
           {
         
-            "img": "./img/tea/Eau des Merveilles-Hermès-.jpg",
+            "img": "img/tea/Eau des Merveilles-Hermès-.jpg",
             "name": "Eau des Merveilles",
             "house": "Hermès",
             "type": "WOODY",
@@ -752,7 +752,7 @@
           },
           {
         
-            "img": "./img/tea/Libre Intense-Yves Saint Laurent.jpg",
+            "img": "img/tea/Libre Intense-Yves Saint Laurent.jpg",
             "name": "Libre Intense",
             "house": "Yves Saint Laurent",
             "type": "AMBER FOUGERE",
@@ -762,7 +762,7 @@
           },
           {
         
-            "img": "./img/tea/Boy Chanel-Chanel-.jpg",
+            "img": "img/tea/Boy Chanel-Chanel-.jpg",
             "name": "Boy Chanel",
             "house": "Chanel",
             "type": "AROMATIC FOUGERE",
@@ -774,7 +774,7 @@
     "ESFJ" : [
         {
         
-            "img": "./img/wine/GUESS SEDUCTIVE-GUESS-.jpg",
+            "img": "img/wine/GUESS SEDUCTIVE-GUESS-.jpg",
             "name": "GUESS SEDUCTIVE",
             "house": "Guess",
             "type": "FLORAL WOODY MUSK",
@@ -784,7 +784,7 @@
           },
           {
         
-            "img": "./img/wine/FLOWER BY KENZO LA COLOGNE-Kenzo.jpg",
+            "img": "img/wine/FLOWER BY KENZO LA COLOGNE-Kenzo.jpg",
             "name": "FLOWER BY KENZO LA COLOGNE",
             "house": "Kenzo",
             "type": "FLORAL WOODY MUSK",
@@ -794,7 +794,7 @@
           },
           {
         
-            "img": "./img/wine/FOR HER MUSC COLLECTION-Narciso Rodriguez-.jpg",
+            "img": "img/wine/FOR HER MUSC COLLECTION-Narciso Rodriguez-.jpg",
             "name": "FOR HER MUSC COLLECTION",
             "house": "Narciso Rodriguez",
             "type": "FLORAL WOODY MUSK",
@@ -804,7 +804,7 @@
           },
           {
         
-            "img": "./img/wine/CYCLADES-Lancôme-.jpg",
+            "img": "img/wine/CYCLADES-Lancôme-.jpg",
             "name": "CYCLADES",
             "house": "Lancôme",
             "type": "FLORAL WOODY MUSK",
@@ -814,7 +814,7 @@
           },
           {
         
-            "img": "./img/wine/Rue Rance Eau Sublime-Rance 1795-.jpg",
+            "img": "img/wine/Rue Rance Eau Sublime-Rance 1795-.jpg",
             "name": "Rue Rance Eau Sublime",
             "house": "Rance 1795",
             "type": "FLORAL WOODY MUSK",
@@ -824,7 +824,7 @@
           },
           {
         
-            "img": "./img/wine/RUMEUR-Lanvin-.jpg",
+            "img": "img/wine/RUMEUR-Lanvin-.jpg",
             "name": "RUMEUR",
             "house": "Lanvin",
             "type": "FLORAL WOODY MUSK",
@@ -834,7 +834,7 @@
           },
           {
         
-            "img": "./img/wine/Acqua di Parma Magnolia Nobile-.jpg",
+            "img": "img/wine/Acqua di Parma Magnolia Nobile-.jpg",
             "name": "Acqua di Parma Magnolia Nobile",
             "house": "Acqua di Parma",
             "type": "FLORAL FRUITY",
@@ -846,7 +846,7 @@
     "ISTJ" : [
         {
         
-            "img": "./img/home/oud_wood_eau_de_parfum_tom ford-.jpg",
+            "img": "img/home/oud_wood_eau_de_parfum_tom ford-.jpg",
             "name": "Oud Wood",
             "house": "Tom Ford",
             "type": "WOODY SPICY",
@@ -856,7 +856,7 @@
           },
           {
         
-            "img": "./img/home/Belle de Nuit-Fragonard-.jpg",
+            "img": "img/home/Belle de Nuit-Fragonard-.jpg",
             "name": "Belle de Nuit",
             "house": "Fragonard",
             "type": "FLORAL FRUITY",
@@ -866,7 +866,7 @@
           },
           {
         
-            "img": "./img/home/Aqua Celestia-Maison Francis Kurkdjian-.jpg",
+            "img": "img/home/Aqua Celestia-Maison Francis Kurkdjian-.jpg",
             "name": "Aqua Celestia",
             "house": "Maison Francis Kurkdjian",
             "type": "FRESH CITRUSY",
@@ -876,7 +876,7 @@
           },
           {
         
-            "img": "./img/home/The Natural-Gap-.jpg",
+            "img": "img/home/The Natural-Gap-.jpg",
             "name": "The Natural",
             "house": "Gap",
             "type": "WOODY AROMATIC",
@@ -886,7 +886,7 @@
           },
           {
         
-            "img": "./img/home/Sunday Cologne-Byredo-.jpg",
+            "img": "img/home/Sunday Cologne-Byredo-.jpg",
             "name": "Sunday Cologne",
             "house": "Byredo",
             "type": "WOODY AROMATIC",
@@ -896,7 +896,7 @@
           },
           {
         
-            "img": "./img/home/SPLASH - BASIL- Marc Jacobs-.jpg",
+            "img": "img/home/SPLASH - BASIL- Marc Jacobs-.jpg",
             "name": "SPLASH - BASIL",
             "house": "Marc Jacobs",
             "type": "AROMATIC FRESH",
@@ -906,7 +906,7 @@
           },
           {
         
-            "img": "./img/home/HEAVEN-Chopard-.jpg",
+            "img": "img/home/HEAVEN-Chopard-.jpg",
             "name": "HEAVEN",
             "house": "Chopard",
             "type": "AROMATIC FRESH",
@@ -916,7 +916,7 @@
           },
           {
         
-            "img": "./img/home/L_EAU SERGE LUTENS-Serge Lutens-.jpg",
+            "img": "img/home/L_EAU SERGE LUTENS-Serge Lutens-.jpg",
             "name": "L'EAU SERGE LUTENS",
             "house": "Serge Lutens",
             "type": "AROMATIC FRESH",
@@ -926,7 +926,7 @@
           },
           {
         
-            "img": "./img/home/PHILTRE CEYLAN-Atelier Cologne-.jpg",
+            "img": "img/home/PHILTRE CEYLAN-Atelier Cologne-.jpg",
             "name": "PHILTRE CEYLAN",
             "house": "Atelier Cologne",
             "type": "AROMATIC FRESH",
@@ -938,7 +938,7 @@
     "ESTJ" : [
     {
     
-        "img": "./img/boat/Paris - Venise-Chanel-.jpg",
+        "img": "img/boat/Paris - Venise-Chanel-.jpg",
         "name": "Paris - Venise",
         "house": "Chanel",
         "type": "AMBER",
@@ -948,7 +948,7 @@
       },
       {
     
-        "img": "./img/boat/Green irish tweed-creed-.jpg",
+        "img": "img/boat/Green irish tweed-creed-.jpg",
         "name": "Green Irish Tweed",
         "house": "Creed",
         "type": "WOODY FLORAL MUSK",
@@ -958,7 +958,7 @@
       },
       {
     
-        "img": "./img/boat/Egoiste Platinum-Chanel.jpg",
+        "img": "img/boat/Egoiste Platinum-Chanel.jpg",
         "name": "Egoiste Platinum",
         "house": "Chanel",
         "type": "WOODY FLORAL MUSK",
@@ -968,7 +968,7 @@
       },
       {
     
-        "img": "./img/boat/L_Homme-Prada.jpg",
+        "img": "img/boat/L_Homme-Prada.jpg",
         "name": "L'Homme",
         "house": "Prada",
         "type": "POWDERY FRESH",
@@ -978,7 +978,7 @@
       },
       {
     
-        "img": "./img/boat/L_HOMME SPORT EAU DE TOILETTE -Yves Saint Laurent.jpg",
+        "img": "img/boat/L_HOMME SPORT EAU DE TOILETTE -Yves Saint Laurent.jpg",
         "name": "L'HOMME SPORT - EAU DE TOILETTE",
         "house": "Yves Saint Laurent",
         "type": "WOODY FRESH",
