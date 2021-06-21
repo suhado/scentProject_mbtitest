@@ -846,7 +846,7 @@ product_data = {
     "ISTJ" : [
         {
         
-            "img": "img/home/oud_wood_eau_de_parfum_tom ford-.jpg",
+            "img": "img/home/oud_wood_eau_de_parfum_tom_ford-.jpg",
             "name": "Oud Wood",
             "house": "Tom Ford",
             "type": "WOODY SPICY",
@@ -938,7 +938,7 @@ product_data = {
     "ESTJ" : [
     {
     
-        "img": "img/boat/Paris - Venise-Chanel-.jpg",
+        "img": "img/boat/Paris_Venise_Chanel.jpg",
         "name": "Paris - Venise",
         "house": "Chanel",
         "type": "AMBER",
@@ -948,7 +948,7 @@ product_data = {
       },
       {
     
-        "img": "img/boat/Green irish tweed-creed-.jpg",
+        "img": "img/boat/Green_irish_tweed_creed.jpg",
         "name": "Green Irish Tweed",
         "house": "Creed",
         "type": "WOODY FLORAL MUSK",
@@ -958,7 +958,7 @@ product_data = {
       },
       {
     
-        "img": "img/boat/Egoiste Platinum-Chanel.jpg",
+        "img": "img/boat/Egoiste_Platinum_Chanel.jpg",
         "name": "Egoiste Platinum",
         "house": "Chanel",
         "type": "WOODY FLORAL MUSK",
@@ -978,7 +978,7 @@ product_data = {
       },
       {
     
-        "img": "img/boat/L_HOMME SPORT EAU DE TOILETTE -Yves Saint Laurent.jpg",
+        "img": "img/boat/L_HOMME_SPORT_EAU_DE_TOILETTE_Yves_Saint_Laurent.jpg",
         "name": "L'HOMME SPORT - EAU DE TOILETTE",
         "house": "Yves Saint Laurent",
         "type": "WOODY FRESH",
