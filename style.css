@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -18,11 +22,13 @@
 }
 
 body {
-    display: table-cell;
+    display: flex;
     position: relative;
     text-align: center;
     vertical-align: middle;
+    flex-direction: column;
 
+    margin: 0 auto;
     background: #FFFFFF;
 }
 
@@ -34,19 +40,42 @@ article {
 
 .start {
     margin: 60px 15px;
+    /* text-align: center; */
+}
 
+.start img {
+    display: block;
+    margin: auto;
 }
 
 img {
+
 position: relative;
+
 width: 312px;
 height: 208px;
 }
 
 .question {
     display: none;
+    vertical-align: middle;
+    text-align: center;
+
+    /* justify-content: center; */
 }
 
+.question_g {
+    vertical-align: middle;
+}
+
+.btn_g {
+    vertical-align: middle;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 230px;
+    
+}
 .result {
     display: none; 
     text-align: center;
@@ -65,14 +94,13 @@ height: 208px;
     margin: 0 auto;
 } */
 
-#logo {
-    /* boonboon */
 
+#logo {
+    /* boonboon */   
     margin-top: 15px;
-    
     font-family: Righteous;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -84,12 +112,7 @@ height: 208px;
 #maintitle {
 /* 나와 어울리는 파티는? */
     position: relative;
-    /* width: 355px;
-    height: 25px;
-    left: 3px;
-    top: 311px; */
 
-    /* 제목1 */
     margin-top: 20px;
     font-family: 'GmarketSansBold';
     font-style: normal;
@@ -98,7 +121,6 @@ height: 208px;
     line-height: 30px;
     text-align: center;
 
-    /* 2 */
     color: #2D2D2D;
 }
 
@@ -106,24 +128,19 @@ height: 208px;
     position: relative;
     margin-top: 5px;
 
-    /* 설명1 */
-
     font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 132%;
-    /* or 16px */
 
     text-align: center;
-
-    /* 3 */
 
     color: #6E6E6E;
 }
 
 #startbtn {
-/* 5 */
+
     color: #a38c8c;
 
     position: relative;
@@ -145,18 +162,17 @@ height: 208px;
     align-items: center;
     text-align: center;
 
-    /* 5 */
     color: #FFFFFF;
 }
 
 #A {
     position: absolute;
+
     width: 312px;
     height: 60px;
-    left: 24px;
-    top: 384px;
-
-    /* 1 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 230%);
 
     border: 1px solid #9706ED;
     box-sizing: border-box;
@@ -168,24 +184,21 @@ height: 208px;
     font-weight: 500;
     font-size: 14px;
     line-height: 131%;
-    /* or 18px */
     
     align-items: center;
     text-align: center;
-    
-    /* 2 */
-    
+
     color: #2D2D2D;
 }
 
 #B {
     position: absolute;
+
     width: 312px;
     height: 60px;
-    left: 24px;
-    top: 468px;
-
-    /* 1 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 370%);
 
     border: 1px solid #9706ED;
     box-sizing: border-box;
@@ -197,39 +210,30 @@ height: 208px;
     font-weight: 500;
     font-size: 14px;
     line-height: 131%;
-    /* or 18px */
-    
+   
 
     align-items: center;
     text-align: center;
-    
-    /* 2 */
     
     color: #2D2D2D;
 }
 
 
-
-
 #title {
-    position: absolute;
-    width: 312px;
-    height: 96px;
-    left: 24px;
-    top: 128px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
 
     /* 질문 */
-
     font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 132%;
-    /* or 24px */
 
     text-align: center;
 
-    /* 2 */
 
     color: #2D2D2D;
 }
@@ -243,17 +247,13 @@ height: 208px;
     top: 128px;
     
     /* 질문 */
-    
     font-family: 'GmarketSansMedium'F;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 132%;
-    /* or 24px */
     
     text-align: center;
-    
-    /* 2 */
     
     color: #2D2D2D;
     }
@@ -317,6 +317,13 @@ list-style: square;
 text-align: justify;
 margin: 24px 10px;
 padding: 0;
+
+
+}
+
+ul li {
+margin: 5px 0;
+
 }
 
 ul li::marker{
@@ -335,7 +342,6 @@ margin-right: 10px;
 
 #explain_y {
     position: relative;
-
     margin: 1px;
 
     font-family: 'GmarketSansMedium';
@@ -384,6 +390,26 @@ hr {
     text-align: center;
 }
 
+.pre_product {
+    display: grid;
+    /* grid-template-columns: repeat(1fr, 6); */
+    grid-template-rows: 40px 25px;
+    font-family: 'Open Sans';
+    text-align: left;
+
+    align-items:flex-end;
+}
+
+.pre_product .contain {
+    justify-content: space-around;
+}
+}
+
+.pre_product .name {
+    display: flex;
+    align-items: flex-end;
+}
+
 .more {
     position: relative;
     display: flex;
@@ -400,6 +426,7 @@ hr {
     color: #9706ED;
 }
 
+
 #more_text {
 flex: 1;
 }
@@ -409,32 +436,105 @@ margin-left: 5px;
 font-size: 10px;
 }
 
+.more_result {
+display: none;
+margin: 80px 20px;
+}
+
+
+#back {
+position: absolute;
+text-align: left;
+top: 0px;
+
+font-size: 30px;
+color: #6E6E6E;
+}
+
+#more_items {
+display: grid;
+grid-auto-rows: minmax(150px, auto);
+background-color: #FFFFFF;
+}
+
+.pd_list {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+
+align-items: center;
+
+}
+
+.contain {
+position: relative;
+margin: auto;
+width: 148px;
+height: 204px;
+object-fit: contain;
+grid-column-start: 1;
+
+}
+
+.product {
+display: grid;
+/* grid-template-columns: repeat(1fr, 6); */
+grid-template-rows: 20px 23px 30px 25px 25px 25px;
+font-family: 'Open Sans';
+
+text-align: left;
+}
+
+.name {
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 14px;
+line-height: 119%;
+color: #2D2D2D;
+}
+
+.house {
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 10px;
+line-height: 120%;
+color: #6e6e6e;
+}
+
+.type, .top, .middle, .base {
+font-family: 'Open Sans';
+font-weight: normal;
+font-size: 9px;
+line-height: 120%;
+color: #6e6e6e;
+}
 
 
 .survey {
-    position: relative;
-    margin: 20px;
+position: relative;
+margin: 20px;
 
-    font-family: 'GmarketSansBold';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 132%;
+font-family: 'GmarketSansBold';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 132%;
 
-    text-align: center;
+text-align: center;
 }
 
 #survey_text {
-    position: relative;
-    margin: 10px;
+position: relative;
+margin: 10px;
 
-    font-family: 'GmarketSansMedium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 131%;
+font-family: 'GmarketSansMedium';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 131%;
 
-    color: #2D2D2D;
+color: #2D2D2D;
 }
 
 #survey_btn {

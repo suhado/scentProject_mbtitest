@@ -12,11 +12,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="result.json" type="text/javascript"></script>
     <script src="product.json" type="text/javascript"></script>
+    <script src="question.json" type="text/javascript"></script>
+    
   </head>
   <body class="container">
-    <div id="logo">boonboon</div>
+      <div id="logo">boonboon</div>
+
     <article class="start">
       <img src="img/result_img/sample.jpg" />
       <h1 id="maintitle">나와 어울리는 파티는?</h1>
@@ -30,11 +34,17 @@
         테스트 하기
       </button>
     </article>
+
     <article class="question">
-      <h2 id="title" class="text-center">문제</h2>
-      <input id="type" type="hidden" value="EI" />
-      <button id="A" class="colorbtn" type="button" class="btn">Primary</button>
-      <button id="B" class="colorbtn" type="button" class="btn">Primary</button>
+      <div class="question_g">
+        <div id="title" class="text-center">문제</div>
+        <input id="type" type="hidden" value="EI" />
+        <div class="btn_g">
+          <button id="A" class="colorbtn" type="button" class="btn">Primary</button>
+          <button id="B" class="colorbtn" type="button" class="btn">Primary</button>
+        </div>
+      </div>
+      
     </article>
     <article class="result">
       <div id="core">
@@ -43,6 +53,7 @@
         <h3 id="explain" class="text-center">파티 설명</h3>
         <h3 id="explain2" class="text-center">파티</h3>
         <div>
+          <!--TODO 가운데 정렬-->
           <ul id="explain_y"></ul>
         </div>
       </div>
@@ -64,16 +75,21 @@
         <div>
           <div>평소 향수에 관심이 있으신가요?</div>
           <div id="survey_text">향수에 관한 생각을 설문조사로 알려주세요</div>
+          <!--TODO 버튼 onclick이벤트 연결-->
           <button id="survey_btn">설문조사 참여하기</button>
         </div>
       </div>
       <div class="result_bottom">
+        <!--TODO 버튼 onclick이벤트 연결-->
         <div><button id="copyLink">링크 복사하기</button></div>
         <div><button id="retest">테스트 다시하기</button></div>
       </div>
     </article>
 
     <article class="more_result">
+        <span id="back" onclick="back()">
+          <i class="fa fa-angle-left"></i>
+        </span>
       <div id="more_items"></div>
     </article>
 
@@ -92,231 +108,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <script class="text">
-      var num = 1;
-      // javascript 객체
-      var q = {
-        1: {
-          title:
-            "띵동. 여유롭게 TV를 보던 금요일 저녁, 친구로부터 파티 초대장이 도착했다. 어떤 파티 초대장일까?",
-          type: "EI",
-          A: "파티라니! 재미있겠다!! 누가 올까?",
-          B: "집에서 쉬고 싶지만 한 번 가볼까?",
-        },
-        2: {
-          title: "파티까지 24시간이 남았다. ‘내일이 파티인데 뭐 입고가지?",
-          type: "EI",
-          A: "완벽 풀착장 코디 완료!",
-          B: "내일의 착장은 내일의 나에게 맡긴다!",
-        },
-        3: {
-          title:
-            "잠자리에 든 당신, 간 밤에 기나긴 꿈을 꿨다. 어떤 꿈이었을까? ",
-          type: "EI",
-          A: "#환상적 #판타지 영화 같은",
-          B: "#현실적 #실제 같은",
-        },
-        4: {
-          title: "아침이 밝았다. 머리 감고~ 나갈 준비를 해 볼까? ",
-          type: "SN",
-          A: "머리를 감으며 ‘오늘 날씨가 어떻지?’",
-          B: "‘물이 사라진다면…’ 상상의 나라로~",
-        },
-        5: {
-          title:
-            "나갈 준비는 끝났고, 나가기 전 방을 둘러보는 당신. 지금 당신의 방은",
-          type: "SN",
-          A: "쓰고 난 물건은 모두 제자리에!",
-          B: "너저분해 보이지만 나만의 규칙이 있다구!",
-        },
-        6: {
-          title:
-            "택시를 타고 파티장으로 향하려는데 택시가 잡히지 않는다. 거기에 차까지 막히네?! 파티 시작 시간보다 많이 늦을 것 같다.",
-          type: "SN",
-          A: "원래 인생은 계획대로 흘러가지 않는 법!",
-          B: "딱 맞춰 나왔는데 늦는다니… 스트레스!",
-        },
-        7: {
-          title:
-            "드디어 파티장에 도착했다. 나에게 초대장을 보낸 친구가 왜 늦었는지 묻는다. ",
-          type: "TF",
-          A: "차가 많이 막혀서 늦었어. 미안해",
-          B: "내가 너무 늦었지 진짜 미안해.",
-        },
-        8: {
-          title:
-            "파티에 도착했다. 처음보는 사람이 나에게 말을 걸어온다. 대화를 이어가지만 내 머릿속은…. ",
-          type: "TF",
-          A: "새로운 사람 만나는거 재미있어! 짜릿해!",
-          B: "살짝 부담스러운걸…?",
-        },
-        9: {
-          title:
-            "다른 사람들과 대화하던 중 나는 “그런 말 자주 들어요^^” 라고 답했다. 이 때 내가 들은 말은 무엇이었을까",
-          type: "TF",
-          A: "“향수씨는 감정이 얼굴에 다 드러나는 것 같아요”",
-          B: "“향수씨는 속을 알 수가 없는 것 같아요”",
-        },
-        10: {
-          title:
-            "파티장을 구경하던 중 벽에 걸려있는 르누아르의 <피아노치는 소녀들> 그림을 보았다",
-          type: "JP",
-          A: "무슨 곡을 연주하고 있는걸까? 자매인가?",
-          B: "피아노를 치고 있구나. 꽃이 예쁘네.",
-        },
-        11: {
-          title: "쨍그랑! 어디선가 들려오는 소리에 나는",
-          type: "JP",
-          A: "무슨 일이지? 다친 사람은 없겠지?",
-          B: "무슨 일이지? 누가 컵을 깼나?",
-        },
-        12: {
-          title:
-            "파티가 끝난 후 친구와 작별인사를 하고 있다. 친구가 나에게 뭐라고 했을까?",
-          type: "JP",
-          A: "“역시 너랑은 말이 정말 잘 통하는 것 같아.”",
-          B: "“오늘 와줘서 너무 고마워. 연락할게~!”",
-        },
-      };
+    <!--index.js-->
+    <script class="text" type="text/javascript" src="index.js"></script>
 
-      const explain_yTag = document.getElementById("explain_y");
-      const result = JSON.parse(JSON.stringify(data));
-      const recommend_tag = document.getElementById("recommend_item");
-      const more_tag = document.getElementById("more_items");
-      const recommend_result = JSON.parse(JSON.stringify(product_data));
-      let mbti = "";
-
-      // 시작버튼
-      function start() {
-        $(".start").hide();
-        $(".question").show();
-        next();
-      }
-
-      function sendData() {
-        $(".start").hide();
-        $(".question").hide();
-        $(".result").hide();
-        $(".more_result").show();
-        moreInfo();
-      }
-
-      $("#A").click(function () {
-        $("#A").css("background-color", "#9706ED");
-        var type = $("#type").val();
-        var preValue = $("#" + type).val();
-        $("#" + type).val(parseInt(preValue) + 1);
-        next();
-      });
-
-      $("#B").click(function () {
-        $("#B").css("background-color", "#9706ED");
-        next();
-      });
-
-      function init() {
-        $("#A").css("background-color", "#ffffff");
-        $("#B").css("background-color", "#ffffff");
-      }
-
-      function mbtiCalc() {
-        $("#EI").val() < 2 ? (mbti += "I") : (mbti += "E");
-        $("#SN").val() < 2 ? (mbti += "N") : (mbti += "S");
-        $("#TF").val() < 2 ? (mbti += "F") : (mbti += "T");
-        $("#JP").val() < 2 ? (mbti += "P") : (mbti += "J");
-        return mbti;
-      }
-
-      // 더보기 페이지 innerHTML
-      function moreInfo() {
-        var more_info = recommend_result[mbti];
-        var replace_more = [];
-        more_info.forEach(function (item) {
-          var push_more = replace_more.push(
-            item["img"],
-            item["name"],
-            item["house"],
-            item["type"],
-            item["top"],
-            item["middle"],
-            item["base"]
-          );
-          return push_more;
-        });
-
-        var replace_more_info = "";
-
-        const num = parseInt(replace_more.length / 7);
-        var lastpd = [];
-        for (var i = 0; i < num; i++) {
-          lastpd = replace_more.slice(7 * i, 7 * i + 7);
-          replace_more_info += `<li> <img class="contain" src=${lastpd[0]} alt="대체이미지"> <div class="product"> <div class="name">${lastpd[1]}</div> <div class="house">${lastpd[2]}</div> <div class="type">${lastpd[3]}</div><div class="top">${lastpd[4]}</div><div class="middle">${lastpd[5]}</div><div class="base">${lastpd[6]}</div></div> </li>`;
-        }
-        return (more_tag.innerHTML = replace_more_info);
-      }
-
-      // recommend_item 3개 출력 (img,name,house)
-      function recommendInfo() {
-        var recommend_info = recommend_result[mbti];
-        var replace_recommend_img = [];
-        var replace_recommend_test = [];
-
-        recommend_info.forEach(function (item) {
-          var push_img = replace_recommend_img.push(item["img"]);
-          var push_test = replace_recommend_test.push(
-            item["img"],
-            item["name"],
-            item["house"]
-          );
-          return [push_img, push_test];
-        });
-
-        var replace_recommend_info = "";
-
-        var test = [];
-        for (var i = 0; i < 3; i++) {
-          test = replace_recommend_test.slice(3 * i, 3 * i + 3);
-          replace_recommend_info += `<li> <img class="contain" src=${test[0]} alt="대체이미지"> <div class="product"> <span class="name">${test[1]}</span> <span class="house">${test[2]}</span> </div> </li>`;
-        }
-        recommend_tag.innerHTML = replace_recommend_info;
-      }
-
-      // 다음문제 - 마지막문제 or 마지막문제가 아닐때
-      function next() {
-        if (num == 13) {
-          $(".question").hide();
-          $(".more_result").hide();
-          $(".result").show();
-
-          var mbti = mbtiCalc();
-
-          $("#result_img").attr("src", result[mbti]["img"]);
-          $("#party").html(result[mbti]["party"]);
-          $("#explain").html(result[mbti]["explain"]);
-          $("#explain2").html(result[mbti]["explain2"]);
-          var explain_yText = result[mbti]["explain_y"];
-          var replace_explain_y = "";
-          $("#explain_y").html(explain_yText);
-
-          explain_yTag.innerHTML.split("\n").forEach((item) => {
-            replace_explain_y += `<li>` + item + `</li>`;
-          });
-          explain_yTag.innerHTML = replace_explain_y;
-
-          recommendInfo();
-        } else {
-          $(".progress-bar").attr("style", "width: calc(100/12*" + num + "%)");
-          $("#title").html(q[num]["title"]);
-          $("#type").val(q[num]["type"]);
-          $("#A").html(q[num]["A"]);
-          $("#B").html(q[num]["B"]);
-          num++;
-        }
-
-        setInterval(init, 350);
-      }
-    </script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script
       type="text/javascript"
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-605956670cd3dc98"
