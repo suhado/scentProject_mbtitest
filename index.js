@@ -1,4 +1,5 @@
 var num = 1;
+
 // javascript 객체
 
 const q = JSON.parse(JSON.stringify(question));
@@ -12,36 +13,43 @@ let mbti = "";
 
 // 시작버튼
 function start() {
-$(".start").hide();
-$(".question").show();
-next();
+    $(".start").hide();
+    $(".question").show();
+    next();
+}
+//TODO restart버튼 구현하기
+function restart() {
+    $(".start").show();
+    $(".question").hide();
+    $(".result").hide();
+    $(".more_result").hide();
 }
 
 function sendData() {
-$(".start").hide();
-$(".question").hide();
-$(".result").hide();
-$(".more_result").show();
-moreInfo();
-window.scrollTo(0,0);
+    $(".start").hide();
+    $(".question").hide();
+    $(".result").hide();
+    $(".more_result").show();
+    moreInfo();
+    window.scrollTo(0,0);
 }
 
 $("#A").click(function () {
-$("#A").css("background-color", "#9706ED");
-var type = $("#type").val();
-var preValue = $("#" + type).val();
-$("#" + type).val(parseInt(preValue) + 1);
-next();
+    $("#A").css("background-color", "#9706ED");
+    var type = $("#type").val();
+    var preValue = $("#" + type).val();
+    $("#" + type).val(parseInt(preValue) + 1);
+    next();
 });
 
 $("#B").click(function () {
-$("#B").css("background-color", "#9706ED");
-next();
+    $("#B").css("background-color", "#9706ED");
+    next();
 });
 
 function init() {
-$("#A").css("background-color", "#ffffff");
-$("#B").css("background-color", "#ffffff");
+    $("#A").css("background-color", "#ffffff");
+    $("#B").css("background-color", "#ffffff");
 }
 
 function mbtiCalc() {
@@ -106,6 +114,66 @@ for (var i = 0; i < 3; i++) {
 recommend_tag.innerHTML = replace_recommend_info;
 }
 
+function clip(){
+	var dummy = document.createElement('input'),
+        text = window.location.href;
+
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+
+    $(document).on("click", "#copyLink", function () {
+        action_popup.alert("링크가 복사되었습니다.");
+    });
+
+    $(".modal_close").on("click", function () {
+        action_popup.close(this);
+    });
+};
+
+var action_popup = {
+    timer: 500,
+
+    alert: function (txt) {
+        this.open("type-alert", txt);
+
+    },
+
+    open: function (type, txt) {
+        var popup = $("." + type);
+        popup.find(".menu_msg").text(txt);
+        $("body").append("<div class='dimLayer'></div>");
+        $(".dimLayer").css('height', $(document).height()).attr("target", type);
+        // popup.fadeIn(this.timer);
+        $(".modal-section").show();
+
+    },
+
+    close: function (target) {
+        var modal = $(target).closest(".modal-section");
+        var dimLayer;
+        if (modal.hasClass("type-alert")) {
+            dimLayer = $(".dimLayer[target=type-alert]")
+        } else {
+            console.warn("close unknown target.")
+            return;
+        }
+        // modal.fadeOut(this.timer);
+        
+        setTimeout(function () {
+            dimLayer != null ? dimLayer.remove() : "";
+            $(".modal-section").hide();
+        }, this.timer);
+    }
+}
+
+// function clipMessage() {
+//     var tooltip = document.getElementById("myTooltip");
+//     tooltip.innerHTML = "Copy to clipboard";
+// }
+
 function back() {
     $(".start").hide();
     $(".question").hide();
@@ -116,34 +184,34 @@ function back() {
 
 // 다음문제 - 마지막문제 or 마지막문제가 아닐때
 function next() {
-if (num == 13) {
-    $(".question").hide();
-    $(".more_result").hide();
-    $(".result").show();
+    if (num == 13) {
+        $(".question").hide();
+        $(".more_result").hide();
+        $(".result").show();
 
-    var mbti = mbtiCalc();
+        var mbti = mbtiCalc();
 
-    $("#result_img").attr("src", result[mbti]["img"]);
-    $("#party").html(result[mbti]["party"]);
-    $("#explain").html(result[mbti]["explain"]);
-    $("#explain2").html(result[mbti]["explain2"]);
-    var explain_yText = result[mbti]["explain_y"];
-    var replace_explain_y = "";
-    $("#explain_y").html(explain_yText);
+        $("#result_img").attr("src", result[mbti]["img"]);
+        $("#party").html(result[mbti]["party"]);
+        $("#explain").html(result[mbti]["explain"]);
+        $("#explain2").html(result[mbti]["explain2"]);
+        var explain_yText = result[mbti]["explain_y"];
+        var replace_explain_y = "";
+        $("#explain_y").html(explain_yText);
 
-    explain_yTag.innerHTML.split("\n").forEach((item) => {
-    replace_explain_y += `<li>` + item + `</li>`;
-    });
-    explain_yTag.innerHTML = replace_explain_y;
+        explain_yTag.innerHTML.split("\n").forEach((item) => {
+        replace_explain_y += `<li>` + item + `</li>`;
+        });
+        explain_yTag.innerHTML = replace_explain_y;
 
-    recommendInfo();
-} else {
-    // $(".progress-bar").attr("style", "width: calc(100/12*" + num + "%)");
-    $("#title").html(q[num]["title"]);
-    $("#type").val(q[num]["type"]);
-    $("#A").html(q[num]["A"]);
-    $("#B").html(q[num]["B"]);
-    num++;
+        recommendInfo();
+    } else {
+        // $(".progress-bar").attr("style", "width: calc(100/12*" + num + "%)");
+        $("#title").html(q[num]["title"]);
+        $("#type").val(q[num]["type"]);
+        $("#A").html(q[num]["A"]);
+        $("#B").html(q[num]["B"]);
+        num++;
 }
 
 //TODO 버튼 색 바꿨다 돌아오는 코드 다시 작성

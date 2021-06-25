@@ -16,13 +16,15 @@
     <script src="result.json" type="text/javascript"></script>
     <script src="product.json" type="text/javascript"></script>
     <script src="question.json" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
+
   </head>
   <body class="container">
       <div id="logo">boonboon</div>
 
     <article class="start">
-      <img src="img/result_img/sample.jpg" />
+      <img src="./party_img/START.png" />
       <h1 id="maintitle">나와 어울리는 파티는?</h1>
       <h3 id="subtitle">나의 성향과 어울리는 파티 찾기 테스트</h3>
       <button
@@ -49,7 +51,7 @@
     <article class="result">
       <div id="core">
         <h2 id="party" class="text-center">당신에게 어울리는 파티는?</h2>
-        <img id="result_img" class="" src="tiger.jpg" alt="party" />
+        <img id="result_img" class="" src="" alt="party" />
         <h3 id="explain" class="text-center">파티 설명</h3>
         <h3 id="explain2" class="text-center">파티</h3>
         <div>
@@ -81,10 +83,16 @@
       </div>
       <div class="result_bottom">
         <!--TODO 버튼 onclick이벤트 연결-->
-        <div><button id="copyLink">링크 복사하기</button></div>
-        <div><button id="retest">테스트 다시하기</button></div>
+        <div>
+          <button id="copyLink" onclick="clip()">
+            링크 복사하기
+          </button>
+        </div>
+        <div><button id="retest" onclick="restart()">테스트 다시하기</button></div>
       </div>
     </article>
+
+
 
     <article class="more_result">
         <span id="back" onclick="back()">
@@ -97,7 +105,17 @@
     <input type="hidden" id="SN" value="0" />
     <input type="hidden" id="TF" value="0" />
     <input type="hidden" id="JP" value="0" />
-    <script
+  
+    <section class="modal modal-section type-alert">
+      <div class="enroll_box">
+          <p class="menu_msg"></p>
+      </div>
+      <div class="enroll_btn">
+          <button class="btn pink_btn modal_close">확인</button>
+      </div>
+  </section>
+
+  <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
