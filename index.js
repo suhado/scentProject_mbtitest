@@ -17,13 +17,16 @@ function start() {
     $(".question").show();
     next();
 }
-//TODO restart버튼 구현하기
+
 function restart() {
     $(".start").show();
     $(".question").hide();
     $(".result").hide();
     $(".more_result").hide();
+
+    resetValue();
 }
+
 
 function sendData() {
     $(".start").hide();
@@ -34,8 +37,18 @@ function sendData() {
     window.scrollTo(0,0);
 }
 
+function init() {
+    $("#A").css("background-color", "#ffffff");
+    $("#B").css("background-color", "#ffffff");
+    $("#A").css("color", "#2D2D2D");
+    $("#B").css("color", "#2D2D2D");
+}
+
+//TODO mosedown 고려해보기
 $("#A").click(function () {
+    init();
     $("#A").css("background-color", "#9706ED");
+    $("#A").css("color", "#ffffff");
     var type = $("#type").val();
     var preValue = $("#" + type).val();
     $("#" + type).val(parseInt(preValue) + 1);
@@ -43,21 +56,29 @@ $("#A").click(function () {
 });
 
 $("#B").click(function () {
+    init();
     $("#B").css("background-color", "#9706ED");
+    $("#B").css("color", "#ffffff");
     next();
 });
 
-function init() {
-    $("#A").css("background-color", "#ffffff");
-    $("#B").css("background-color", "#ffffff");
-}
+
 
 function mbtiCalc() {
-$("#EI").val() < 2 ? (mbti += "I") : (mbti += "E");
-$("#SN").val() < 2 ? (mbti += "N") : (mbti += "S");
-$("#TF").val() < 2 ? (mbti += "F") : (mbti += "T");
-$("#JP").val() < 2 ? (mbti += "P") : (mbti += "J");
-return mbti;
+    $("#EI").val() < 2 ? (mbti += "I") : (mbti += "E");
+    $("#SN").val() < 2 ? (mbti += "N") : (mbti += "S");
+    $("#TF").val() < 2 ? (mbti += "F") : (mbti += "T");
+    $("#JP").val() < 2 ? (mbti += "P") : (mbti += "J");
+    return mbti;
+}
+
+function resetValue(){
+    var set = document.getElementsByClassName("setValue");
+    set[0].value="EI";
+    set[1].value = "0";
+    set[2].value = "0";
+    set[3].value = "0";
+    set[4].value = "0";
 }
 
 // 더보기 페이지 innerHTML
@@ -205,6 +226,10 @@ function next() {
         explain_yTag.innerHTML = replace_explain_y;
 
         recommendInfo();
+
+        num = 1;
+        
+        
     } else {
         // $(".progress-bar").attr("style", "width: calc(100/12*" + num + "%)");
         $("#title").html(q[num]["title"]);
@@ -215,5 +240,5 @@ function next() {
 }
 
 //TODO 버튼 색 바꿨다 돌아오는 코드 다시 작성
-setInterval(init, 350);
+    // setInterval(init, 350);
 }

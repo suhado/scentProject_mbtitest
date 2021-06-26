@@ -31,7 +31,7 @@
         id="startbtn"
         type="button"
         class="btn btn-primary mt-5"
-        onclick="start();"
+        onclick="start()"
       >
         테스트 하기
       </button>
@@ -40,7 +40,7 @@
     <article class="question">
       <div class="question_g">
         <div id="title" class="text-center">문제</div>
-        <input id="type" type="hidden" value="EI" />
+        <input id="type" class="setValue" type="hidden" value="EI"/>
         <div class="btn_g">
           <button id="A" class="colorbtn" type="button" class="btn">Primary</button>
           <button id="B" class="colorbtn" type="button" class="btn">Primary</button>
@@ -55,7 +55,6 @@
         <h3 id="explain" class="text-center">파티 설명</h3>
         <h3 id="explain2" class="text-center">파티</h3>
         <div>
-          <!--TODO 가운데 정렬-->
           <ul id="explain_y"></ul>
         </div>
       </div>
@@ -82,7 +81,6 @@
         </div>
       </div>
       <div class="result_bottom">
-        <!--TODO 버튼 onclick이벤트 연결-->
         <div>
           <button id="copyLink" onclick="clip()">
             링크 복사하기
@@ -101,10 +99,10 @@
       <div id="more_items"></div>
     </article>
 
-    <input type="hidden" id="EI" value="0" />
-    <input type="hidden" id="SN" value="0" />
-    <input type="hidden" id="TF" value="0" />
-    <input type="hidden" id="JP" value="0" />
+    <input type="hidden" class="setValue" id="EI" value="0" />
+    <input type="hidden" class="setValue" id="SN" value="0" />
+    <input type="hidden" class="setValue" id="TF" value="0" />
+    <input type="hidden" class="setValue" id="JP" value="0" />
   
     <section class="modal modal-section type-alert">
       <div class="enroll_box">
