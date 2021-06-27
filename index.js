@@ -44,7 +44,7 @@ function init() {
     $("#B").css("color", "#2D2D2D");
 }
 
-//TODO mosedown 고려해보기
+//TODO mousedown 고려해보기
 $("#A").click(function () {
     init();
     $("#A").css("background-color", "#9706ED");
@@ -61,7 +61,6 @@ $("#B").click(function () {
     $("#B").css("color", "#ffffff");
     next();
 });
-
 
 
 function mbtiCalc() {
@@ -240,5 +239,5 @@ function next() {
 }
 
 //TODO 버튼 색 바꿨다 돌아오는 코드 다시 작성
-    // setInterval(init, 350);
+    setTimeout(init, 200);
 }

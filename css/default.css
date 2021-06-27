@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: column;
+
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#logo {
+    /* boonboon */   
+    margin-top: 15px;
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #9706ED;
+}
+
+img {
+    position: relative;
+
+    width: 312px;
+    height: 208px;
+}
+
+.text {
+    position: absolute;
+    width: 312px;
+    height: 96px;
+    left: 24px;
+    top: 128px;
+    
+    font-family: 'GmarketSansMedium'F;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+    
+    text-align: center;
+    
+    color: #2D2D2D;
+}

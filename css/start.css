@@ -1,0 +1,63 @@
+.start {
+    margin: 60px 15px;
+}
+
+.start img {
+    display: block;
+    margin: auto;
+}
+
+#maintitle {
+/* 나와 어울리는 파티는? */
+    position: relative;
+
+    margin-top: 20px;
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #2D2D2D;
+}
+
+#subtitle {
+    position: relative;
+    margin-top: 5px;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 132%;
+
+    text-align: center;
+
+    color: #6E6E6E;
+}
+
+#startbtn {
+    color: #a38c8c;
+
+    position: relative;
+    margin: auto;
+
+    width: 216px;
+    height: 56px;
+    
+
+    background: #9706ED;
+    border-radius: 28px;
+    border-color: #9706ED;
+
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 47px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}

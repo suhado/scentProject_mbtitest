@@ -1,0 +1,129 @@
+.recommend {
+    position: relative;
+    margin: 20px;
+
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 132%;
+
+    text-align: center;
+}
+
+.more {
+    position: relative;
+    display: flex;
+    margin: 15px -5px;
+
+
+    font-family:'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+    text-align: right;
+
+    color: #9706ED;
+}
+
+#more_text {
+    flex: 1;
+}
+
+#more_icon {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.pre_product {
+    display: grid;
+    grid-template-rows: 40px 25px;
+    font-family: 'Open Sans';
+    text-align: left;
+
+    align-items:flex-end;
+}
+
+.pre_product .contain {
+    justify-content: space-around;
+}
+
+.pre_product .name {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.more_result {
+    display: none;
+    margin: 80px 20px;
+}
+
+#back {
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    
+    font-size: 30px;
+    color: #6E6E6E;
+}
+
+#more_items {
+display: grid;
+grid-auto-rows: minmax(150px, auto);
+background-color: #FFFFFF;
+}
+
+/* pd_list 공통 */
+.pd_list {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+
+align-items: center;
+}
+
+/* contain 공통 img */
+.contain {
+position: relative;
+margin: auto;
+width: 148px;
+height: 204px;
+object-fit: contain;
+grid-column-start: 1;
+
+}
+
+.product {
+display: grid;
+grid-template-rows: 20px 23px 30px 25px 25px 25px;
+font-family: 'Open Sans';
+
+text-align: left;
+}
+
+.name {
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 14px;
+line-height: 119%;
+color: #2D2D2D;
+}
+
+.house {
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 10px;
+line-height: 120%;
+color: #6e6e6e;
+}
+
+.type, .top, .middle, .base {
+font-family: 'Open Sans';
+font-weight: normal;
+font-size: 9px;
+line-height: 120%;
+color: #6e6e6e;
+}

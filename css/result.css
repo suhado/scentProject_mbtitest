@@ -1,0 +1,149 @@
+.result {
+    display: none; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+#core {
+    position: relative;
+    margin: 20px;
+}
+
+#party {
+    position: relative;
+       
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #2D2D2D;
+}
+
+#result_img {
+    position: relative;
+    margin: 15px;
+
+    width: 248px;
+    height: 248px;
+
+    border-radius: 70%;
+}
+
+#explain {
+    position: relative;
+    
+    margin:4px;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 132%;
+
+    text-align: center;
+    color: #6E6E6E;
+}
+
+#explain2 {
+    position: relative;
+
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #9706ED;
+}
+
+#explain_y {
+    position: relative;
+    margin: 3px;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+
+    color: #2D2D2D;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: square;
+    text-align: justify;
+    margin: 24px 10px;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li::marker{
+    color: #9706ED;
+    margin-right: 10px;
+}
+
+hr {
+    position: relative;
+    width: 50%;
+    height: 1px;
+    background-color: #9706ED;
+}
+
+.survey {
+    position: relative;
+    margin: 20px;
+    
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 132%;
+    
+    text-align: center;
+    }
+    
+    #survey_text {
+    position: relative;
+    margin: 10px;
+    
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 131%;
+    
+    color: #2D2D2D;
+    }
+    
+    #survey_btn {
+        color: #a38c8c;
+    
+        position: relative;
+        margin: 24px auto;
+    
+        width: 180px;
+        height: 48px;
+    
+        background: #ffffff;
+        border-radius: 28px;
+        border-color: #9706ED;
+    
+        font-family: 'GmarketSansmedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 47px;
+        align-items: center;
+        text-align: center;
+    
+        color: #2D2D2D;
+    }

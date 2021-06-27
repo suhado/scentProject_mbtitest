@@ -11,7 +11,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="result.json" type="text/javascript"></script>
     <script src="product.json" type="text/javascript"></script>
@@ -38,6 +38,9 @@
     </article>
 
     <article class="question">
+      <!-- <div class="progress mt-5">
+        <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+      </div> -->
       <div class="question_g">
         <div id="title" class="text-center">문제</div>
         <input id="type" class="setValue" type="hidden" value="EI"/>
@@ -86,7 +89,11 @@
             링크 복사하기
           </button>
         </div>
-        <div><button id="retest" onclick="restart()">테스트 다시하기</button></div>
+        <div>
+          <button id="retest" onclick="restart()">
+            테스트 다시하기
+          </button>
+        </div>
       </div>
     </article>
 

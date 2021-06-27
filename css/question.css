@@ -1,0 +1,74 @@
+.question {
+    display: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.question_g {
+    vertical-align: middle;
+}
+
+#title {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /* 질문 */
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+
+    text-align: center;
+
+
+    color: #2D2D2D;
+}
+
+.btn_g {
+    vertical-align: middle;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 230px;
+    
+}
+
+.colorbtn {
+    position: absolute;
+
+    width: 312px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+
+    border: 1px solid #9706ED;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #FFFFFF;
+
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131%;
+    
+    align-items: center;
+    text-align: center;
+
+    color: #2D2D2D;
+}
+
+#A {
+    transform: translate(-50%, 230%);
+}
+
+#B {
+    transform: translate(-50%, 370%);
+}
+
+/* .progress-bar {
+
+} */
