@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="이것은 boonboon팀이 제작한 파티테스트입니다만ㅎㅎ">
+    <!-- TODO meta태그 공유용으로 수정하기 -->
+    <!-- <meta name="description" content="이것은 boonboon팀이 제작한 파티테스트입니다만ㅎㅎ">
     <meta name="twitter:title" content="이것은 boonboon">
-    <meta property="og:title" content="파티테스트입니다.">
+    <meta property="og:title" content="파티테스트입니다."> -->
     <title>boonboon</title>
     <link
       rel="stylesheet"
@@ -26,6 +27,7 @@
   <body class="container">
       <div id="logo">boonboon</div>
 
+    <!-- TODO start img 정렬 -->
     <article class="start">
       <img src="./party_img/START.png" />
       <h1 id="maintitle">나와 어울리는 파티는?</h1>
@@ -41,10 +43,12 @@
     </article>
 
     <article class="question">
+      <!-- TODO progress bar 적용해보기 -->
       <!-- <div class="progress mt-5">
         <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
       </div> -->
       <div class="question_g">
+        <!-- TODO 문제 텍스트 깨지지 않게 "향수씨는~" -->
         <div id="title" class="text-center">문제</div>
         <input id="type" class="setValue" type="hidden" value="EI"/>
         <div class="btn_g">
@@ -70,6 +74,7 @@
       <div class="recommend">
         <div>오늘 파티에 이런 향수 어때요?</div>
         <div class="more" onclick="sendData()">
+          <!-- TODO 더보기 글자 깨지지 않게 -->
           <div id="more_text">더보기</div>
           <div id="more_icon">▶</div>
         </div>
