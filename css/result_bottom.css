@@ -9,7 +9,7 @@
         cursor: pointer;
         border: 1px solid #999999;
         text-align: center;
-        border-radius: 5px;
+        border-radius: 28px;
         outline: none;
         font-weight: 500;
     }
@@ -25,10 +25,10 @@
     }
     
     .modal{
-        width: 380px;
-        height: 200px;
+        width: 280px;
+        height: 150px;
         border-radius: 10px;
-        padding: 80px 24px;
+        padding: 30px 24px;
         box-sizing: border-box;
         text-align: center;
     }
@@ -75,6 +75,7 @@
         width: 90px;
         background: #9706ED;
         color: #ffffff;
+        width: 136px;
         height: 36px;
     
         transition: 0.5s;
