@@ -1,11 +1,11 @@
 // Facebook 공유
-window.open(
-    'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://boonboon.netlify.app/')
-  );
-  // Twitter 공유
-  window.open(
-    'https://twitter.com/intent/tweet?url=' + encodeURIComponent('https://boonboon.netlify.app/')
-  );
+// window.open(
+//     'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://boonboon.netlify.app/')
+//   );
+//   // Twitter 공유
+//   window.open(
+//     'https://twitter.com/intent/tweet?url=' + encodeURIComponent('https://boonboon.netlify.app/')
+//   );
 
 // Kakao 공유
 Kakao.init('9969a7e1793ba969219b97e178898ae2');
