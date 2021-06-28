@@ -266,3 +266,12 @@ function next() {
 //TODO 버튼 색 바꿨다 돌아오는 코드 다시 작성
     setInterval(init, 500);
 }
+
+//JQuery conflict with google tag manager
+var func = function() {
+    if (jQuery) {  
+        clearInterval(forJtimer);
+        // do your stuff
+    }
+}
+var forJtimer = setInterval(func, 1000);

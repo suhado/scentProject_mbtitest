@@ -33,7 +33,7 @@ product_data = {
     
         "img": "img/garden/Princess_Cottongrass.jpg",
         "name": "Princess Cottongrass",
-        "house": "Rush",
+        "house": "LUSH",
         "type": "AROMATIC GREEN",
         "top": "",
         "middle": "",
@@ -136,7 +136,7 @@ product_data = {
     
         "img": "img/pajamas/Sun_rush.jpg",
         "name": "Sun",
-        "house": "Rush",
+        "house": "LUSH",
         "type": "CITRUS GOURMAND",
         "top": "",
         "middle": "",
@@ -146,7 +146,7 @@ product_data = {
     
         "img": "img/pajamas/Honey_I_washed_The_Kids.jpg",
         "name": "Honey I washed The Kids",
-        "house": "Rush",
+        "house": "LUSH",
         "type": "CITRUS GOURMAND",
         "top": "",
         "middle": "",
@@ -442,7 +442,7 @@ product_data = {
         
             "img": "img/casino/thebug.jpg",
             "name": "The Bug",
-            "house": "Rush",
+            "house": "LUSH",
             "type": "AROMATIC AQUATIC",
             "top": "",
             "middle": "",
@@ -525,7 +525,7 @@ product_data = {
     
         "img": "img/mask/twillight.jpg",
         "name": "Twillight",
-        "house": "Rush",
+        "house": "LUSH",
         "type": "AROMATIC FLORAL",
         "top": "",
         "middle": "",
