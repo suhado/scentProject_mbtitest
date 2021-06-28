@@ -2,7 +2,7 @@ body {
     display: flex;
     position: relative;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     flex-direction: column;
 
     margin: 0 auto;
@@ -31,8 +31,7 @@ article {
 img {
     position: relative;
 
-    width: 312px;
-    height: 208px;
+    width: 100%;
 }
 
 .text {

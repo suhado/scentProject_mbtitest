@@ -3,7 +3,7 @@
 }
 
 .start img {
-    display: block;
+    display: inline-block;
     margin: auto;
 }
 

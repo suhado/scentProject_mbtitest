@@ -10,6 +10,7 @@ const more_tag = document.getElementById("more_items");
 const recommend_result = JSON.parse(JSON.stringify(product_data));
 
 let mbti = "";
+console.log(mbti, "전역변수")
 
 // 시작버튼
 function start() {
@@ -44,7 +45,6 @@ function init() {
     $("#B").css("color", "#2D2D2D");
 }
 
-//TODO mousedown 고려해보기
 $("#A").click(function () {
     init();
     $("#A").css("background-color", "#9706ED");
@@ -68,11 +68,14 @@ function mbtiCalc() {
     $("#SN").val() < 2 ? (mbti += "N") : (mbti += "S");
     $("#TF").val() < 2 ? (mbti += "F") : (mbti += "T");
     $("#JP").val() < 2 ? (mbti += "P") : (mbti += "J");
+    console.log(mbti, "mbtiCalc안")
     return mbti;
 }
 
+
 function resetValue(){
     var set = document.getElementsByClassName("setValue");
+    mbti = "";
     set[0].value="EI";
     set[1].value = "0";
     set[2].value = "0";
@@ -101,9 +104,30 @@ var replace_more_info = "";
 
 const pd_length = parseInt(replace_more.length / 7);
 var lastpd = [];
+
+function printNote(element, note) {
+    var capNote = note.charAt(0).toUpperCase() + note.slice(1);
+    return element.length ? `<div class="${note}">${capNote} Notes:<br> ${element}</div>` : ``;
+}
+
 for (var i = 0; i < pd_length; i++) {
     lastpd = replace_more.slice(7 * i, 7 * i + 7);
-    replace_more_info += `<li class="pd_list"> <img class="contain" src=${lastpd[0]} alt="대체이미지"> <div class="product"> <div class="name">${lastpd[1]}</div> <div class="house">${lastpd[2]}</div> <div class="type">Type: ${lastpd[3]}</div><div class="top">Top Notes:<br> ${lastpd[4]}</div><div class="middle">Middle Notes:<br> ${lastpd[5]}</div><div class="base">Base Notes:<br> ${lastpd[6]}</div></div> </li>`;
+    console.log(i + "번째");
+    console.log(lastpd[4], "Topnotes출력시험");
+    console.log(lastpd[4].length == 0);
+    
+    replace_more_info += `
+        <li class="pd_list"> 
+            <img class="contain" src=${lastpd[0]} alt="대체이미지">
+            <div class="product">
+                <div class="name">${lastpd[1]}</div>
+                <div class="house">${lastpd[2]}</div>
+                <div class="type">Type: ${lastpd[3]}</div>
+                ${printNote(lastpd[4], "top")}
+                ${printNote(lastpd[5], "middle")}
+                <div class="base">Base Notes:<br> ${lastpd[6]}</div>
+            </div>
+        </li>`;
 }
 return (more_tag.innerHTML = replace_more_info);
 }
@@ -210,6 +234,7 @@ function next() {
         $(".result").show();
 
         var mbti = mbtiCalc();
+        console.log(mbti, "next안")
 
         $("#result_img").attr("src", result[mbti]["img"]);
         $("#party").html(result[mbti]["party"]);
@@ -228,6 +253,7 @@ function next() {
 
         num = 1;
         
+    
         
     } else {
         // $(".progress-bar").attr("style", "width: calc(100/12*" + num + "%)");
