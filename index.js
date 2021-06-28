@@ -10,7 +10,7 @@ const more_tag = document.getElementById("more_items");
 const recommend_result = JSON.parse(JSON.stringify(product_data));
 
 let mbti = "";
-console.log(mbti, "전역변수")
+
 
 // 시작버튼
 function start() {
@@ -68,7 +68,7 @@ function mbtiCalc() {
     $("#SN").val() < 2 ? (mbti += "N") : (mbti += "S");
     $("#TF").val() < 2 ? (mbti += "F") : (mbti += "T");
     $("#JP").val() < 2 ? (mbti += "P") : (mbti += "J");
-    console.log(mbti, "mbtiCalc안")
+
     return mbti;
 }
 
@@ -112,9 +112,7 @@ function printNote(element, note) {
 
 for (var i = 0; i < pd_length; i++) {
     lastpd = replace_more.slice(7 * i, 7 * i + 7);
-    console.log(i + "번째");
-    console.log(lastpd[4], "Topnotes출력시험");
-    console.log(lastpd[4].length == 0);
+
     
     replace_more_info += `
         <li class="pd_list"> 
@@ -174,6 +172,7 @@ function clip(){
 
     $(".modal_close").on("click", function () {
         action_popup.close(this);
+        $(".modal_close").css("color", "#ffffff");
     });
 };
 
@@ -234,7 +233,7 @@ function next() {
         $(".result").show();
 
         var mbti = mbtiCalc();
-        console.log(mbti, "next안")
+
 
         $("#result_img").attr("src", result[mbti]["img"]);
         $("#party").html(result[mbti]["party"]);
@@ -265,5 +264,5 @@ function next() {
 }
 
 //TODO 버튼 색 바꿨다 돌아오는 코드 다시 작성
-    setTimeout(init, 200);
+    setInterval(init, 500);
 }

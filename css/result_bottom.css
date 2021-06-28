@@ -1,135 +1,141 @@
 .result_bottom {
-    align-items: center;
-    text-align: center;
-    
-    margin: 140px auto;
+  align-items: center;
+  text-align: center;
+
+  margin: 140px auto;
 }
-    
-    .modal .btn{
-        cursor: pointer;
-        border: 1px solid #999999;
-        text-align: center;
-        border-radius: 28px;
-        outline: none;
-        font-weight: 500;
-    }
-    
-    .dimLayer{
-        display: block;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        position: fixed;
-        left: 0; top: 0px;
-        margin: 0; padding: 0;
-        z-index: 9998;
-    }
-    
-    .modal{
-        width: 280px;
-        height: 150px;
-        border-radius: 10px;
-        padding: 30px 24px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    
-    .modal-section{
-        background: #ffffff;
-        box-sizing: border-box;
-        display: none;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        display: none;
-        z-index: 9999;
-    }
-    
-    .menu_msg{
-        font-family: 'GmarketSansMedium';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 21px;
-        line-height: 131%;
-    }
-    
-    .enroll_box p{
-        padding-bottom: 10px;
-    }
-    
-    .gray_btn {
-        width: 90px;
-        background: #ffffff;
-        color: #999999;
-        height: 36px;
-        line-height: 36px;
-        transition: 0.5s;
-        font-size: 17px;
-    }
-    
-    .pink_btn {
-        width: 90px;
-        background: #9706ED;
-        color: #ffffff;
-        width: 136px;
-        height: 36px;
-    
-        transition: 0.5s;
-        font-family: 'GmarketSansMedium';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 100%;
-    
-        border: none;
-    }
-    
-    
-    #copyLink {
-        position: relative;
-    
-        width: 312px;
-        height: 60px;
-        border: 1px solid #9706ED;
-    
-        border-radius: 30px;
-        background: #9706ED;
-    
-        font-family: 'GmarketSansMedium';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 131%;
-    
-        align-items: center;
-        text-align: center;
-    
-        color: #ffffff;
-    }
-    
-    #retest {
-        position: relative;
-    
-        margin-top: 25px;
-        width: 312px;
-        height: 60px;
-        border: 1px solid #9706ED;
-        /* box-sizing: border-box; */
-        border-radius: 30px;
-        background: #ffffff;
-    
-        font-family: 'GmarketSansMedium';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 131%;
-    
-        align-items: center;
-        text-align: center;
-    
-        color: #2D2D2D;
-    }
+
+.modal .btn {
+  cursor: pointer;
+  border: 1px solid #999999;
+  text-align: center;
+  border-radius: 28px;
+  outline: none;
+  font-weight: 500;
+}
+
+.dimLayer {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  z-index: 9998;
+}
+
+.modal {
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modal-section {
+  background: #ffffff;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+}
+p .menu_msg {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.menu_msg {
+  font-family: "GmarketSansMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 131%;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.enroll_box p {
+  padding-bottom: 10px;
+}
+
+.gray_btn {
+  width: 90px;
+  background: #ffffff;
+  color: #999999;
+  height: 36px;
+  line-height: 36px;
+  transition: 0.5s;
+  font-size: 17px;
+}
+
+.pink_btn {
+  width: 90px;
+  background: #9706ed;
+  color: #ffffff;
+  width: 136px;
+  height: 36px;
+
+  transition: 0.5s;
+  font-family: "GmarketSansMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+
+  border: none;
+}
+
+#copyLink {
+  position: relative;
+
+  width: 312px;
+  height: 60px;
+  border: 1px solid #9706ed;
+
+  border-radius: 30px;
+  background: #9706ed;
+
+  font-family: "GmarketSansMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 131%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#retest {
+  position: relative;
+
+  margin-top: 25px;
+  width: 312px;
+  height: 60px;
+  border: 1px solid #9706ed;
+  /* box-sizing: border-box; */
+  border-radius: 30px;
+  background: #ffffff;
+
+  font-family: "GmarketSansMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 131%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #2d2d2d;
+}
