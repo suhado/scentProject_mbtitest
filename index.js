@@ -1,6 +1,23 @@
 var num = 1;
 let mbti = "";
 
+$("#A").click(function () {
+    nextPack.init();
+    $("#A").css("background-color", "#9706ED");
+    $("#A").css("color", "#ffffff");
+    var type = $("#type").val();
+    var preValue = $("#" + type).val();
+    $("#" + type).val(parseInt(preValue) + 1);
+    nextPack.next();
+});
+
+$("#B").click(function () {
+    nextPack.init();
+    $("#B").css("background-color", "#9706ED");
+    $("#B").css("color", "#ffffff");
+    nextPack.next();
+});
+
 var nextPack = {
     explain_yTag : document.getElementById("explain_y"),
     result : JSON.parse(JSON.stringify(data)),
