@@ -95,49 +95,38 @@ p .menu_msg {
   border: none;
 }
 
-#copyLink {
+.result_bottom #copyLink #retest {
   position: relative;
-
-  width: 312px;
-  height: 60px;
-  border: 1px solid #9706ed;
-
-  border-radius: 30px;
-  background: #9706ed;
-
   font-family: "GmarketSansMedium";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 131%;
-
   align-items: center;
   text-align: center;
+}
 
+#copyLink {
+  background: #9706ed;
   color: #ffffff;
+
+  width: 312px;
+  height: 60px;
+
+  border: 1px solid #9706ed;
+  border-radius: 30px;
 }
 
 #retest {
-  position: relative;
-
   margin-top: 25px;
-  width: 312px;
-  height: 60px;
-  border: 1px solid #9706ed;
-  /* box-sizing: border-box; */
-  border-radius: 30px;
   background: #ffffff;
-
-  font-family: "GmarketSansMedium";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 131%;
-
-  align-items: center;
-  text-align: center;
-
   color: #2d2d2d;
+
+  height: 60px;
+  width: 312px;
+
+  border: 1px solid #9706ed;
+  border-radius: 30px;
 }
 
 #gotoInsta {

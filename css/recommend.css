@@ -1,129 +1,135 @@
 .recommend {
-    position: relative;
-    margin: 20px;
+  position: relative;
+  margin: 20px;
 
-    font-family: 'GmarketSansBold';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 132%;
+  font-family: "GmarketSansBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 132%;
 
-    text-align: center;
+  text-align: center;
 }
 
-.more {
-    position: relative;
-    display: flex;
-    margin: 15px -5px;
+#more {
+  position: relative;
 
+  position: relative;
+  margin: 24px auto 60px;
 
-    font-family:'GmarketSansMedium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 131%;
-    text-align: right;
+  width: 180px;
+  height: 48px;
 
-    color: #9706ED;
-}
+  background: #ffffff;
+  border-radius: 28px;
+  border-color: #9706ed;
 
-#more_text {
-    flex: 1;
-}
+  font-family: "GmarketSansmedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 131%;
+  align-items: center;
+  text-align: center;
 
-#more_icon {
-    margin-left: 5px;
-    font-size: 10px;
+  color: #2d2d2d;
 }
 
 .pre_product {
-    display: grid;
-    grid-template-rows: 40px 25px;
-    font-family: 'Open Sans';
-    text-align: left;
+  display: grid;
+  grid-template-rows: 40px 25px;
+  font-family: "Open Sans";
+  text-align: left;
 
-    align-items:flex-end;
+  align-items: flex-end;
 }
 
 .pre_product .contain {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .pre_product .name {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
-
 .more_result {
-    display: none;
-    margin: 80px 20px;
+  display: none;
+  margin: 80px 20px;
 }
 
 #back {
-    position: absolute;
-    text-align: left;
-    top: 0px;
-    
-    font-size: 30px;
-    color: #6E6E6E;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+
+  font-size: 30px;
+  color: #6e6e6e;
 }
 
 #more_items {
-display: grid;
-grid-auto-rows: minmax(150px, auto);
-background-color: #FFFFFF;
-row-gap: 15px;
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  background-color: #ffffff;
+  row-gap: 15px;
 }
 
 /* pd_list 공통 */
 .pd_list {
-list-style: none;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
-align-items: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
 }
 
 /* contain 공통 img */
 .contain {
-position: relative;
-margin: auto;
-width: 148px;
-height: 204px;
-object-fit: contain;
-grid-column-start: 1;
+  position: relative;
+  margin: auto;
+  width: 148px;
+  height: 204px;
+  object-fit: contain;
+  grid-column-start: 1;
 }
 
 .product {
-display: grid;
-grid-template-rows: minmax(20px, max-content) 23px minmax(20px, max-content) minmax(0px, max-content) minmax(0px, max-content) minmax(25px, max-content);
-row-gap: 5px;
-font-family: 'Open Sans';
+  display: grid;
+  grid-template-rows:
+    minmax(20px, max-content) 23px minmax(20px, max-content) minmax(
+      0px,
+      max-content
+    )
+    minmax(0px, max-content) minmax(25px, max-content);
+  row-gap: 5px;
+  font-family: "Open Sans";
 
-text-align: left;
+  text-align: left;
 }
 
 .name {
-font-family: 'Open Sans';
-font-weight: 600;
-font-size: 14px;
-line-height: 119%;
-color: #2D2D2D;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 119%;
+  color: #2d2d2d;
 }
 
 .house {
-font-family: 'Open Sans';
-font-weight: 600;
-font-size: 10px;
-line-height: 120%;
-color: #6e6e6e;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  color: #6e6e6e;
 }
 
-.type, .top, .middle, .base {
-font-family: 'Open Sans';
-font-weight: normal;
-font-size: 9px;
-line-height: 120%;
-color: #6e6e6e;
+.type,
+.top,
+.middle,
+.base {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 120%;
+  color: #6e6e6e;
 }
